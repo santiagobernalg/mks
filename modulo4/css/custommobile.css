@@ -1,0 +1,1691 @@
+.change { color: red; }
+
+.jpit-activities-droppable .droppable {
+    padding-bottom: 0;
+}
+
+.ui-widget.ui-widget-content {
+    box-shadow: none;
+    background: #393939e3 !important;
+}
+
+.box_media img {max-height: 50vh; margin: auto;}
+
+audio {max-width: 100%; max-height: 30px;}
+
+.w-content.ui-dialog-content.ui-widget-content .instruction {
+    color: #fff;
+}
+
+.text_tooltip {
+    line-height: 14px;
+}
+
+.videobox {height: 40vh;}
+
+.instruction {color: #fff;}
+
+ul.data_list {padding-inline-start: 20px;}
+
+
+/********************************************************************************/
+/* SPECIFIC LAYER STYLES
+/********************************************************************************/
+#pag-textos-infografia .note_pointer_left, #pag-textos-infografia .note_pointer_right {
+    display: inline-table;
+    position: relative;
+}
+
+#pag-textos-iconografia i {
+    font-size: 27px;
+    cursor: default;
+}
+
+#pag-textos-iconografia .lista_iconos i:hover {
+    color: #f6ae00;
+}
+
+#pag-textos-iconografia .little i {
+    font-size: 14px;
+}
+
+#pag-textos-iconografia .large i {
+    font-size: 50px;
+}
+
+#pag-textos-iconografia .color i { font-size: 30px; }
+#pag-textos-iconografia .color i.a { color: #0ff; }
+#pag-textos-iconografia .color i.b { color: #f0f; }
+#pag-textos-iconografia .color i.c { color: #00f; }
+#pag-textos-iconografia .color i.d { color: #3de467; }
+
+#pag-textos-iconografia .link i { font-size: 30px; cursor: pointer; }
+
+#pag-textos-iconografia .effects i { font-size: 30px; color: #f00; margin: 0 10px; }
+#pag-textos-iconografia .effects i.a { text-shadow: 5px 5px 10px #000; }
+#pag-textos-iconografia .effects i.b { text-shadow: 10px 10px 3px #000; }
+#pag-textos-iconografia .effects i.c { text-shadow: 15px 5px 5px #000;  }
+#pag-textos-iconografia .effects i.d { text-shadow: 8px 0px 0px #000;  }
+
+
+/********************************************************************************/
+/* Solo para ejemplo de mouse over 1
+/********************************************************************************/
+#pag-textos-mouseover1 .mouse-over-one .button {
+    background: #FFFFFF;
+    border: dashed #00A5C0 1px;
+    float: left;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#pag-textos-mouseover1 .mouse-over-one .button:hover {
+    background: #f6ae00;
+}
+
+#pag-textos-mouseover1 .mouse-over-one {
+    vertical-align: top;
+}
+
+#pag-textos-mouseover1 .contenido_sobre h5 {
+    margin: 0;
+}
+
+#pag-textos-mouseover1 .contenido_sobre {
+    padding: 10px;
+    text-align: justify;
+    box-shadow: 7px 7px 5px #cccccc;
+    background: #FFFFFF;
+    border: 1px solid #aaa;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#pag-textos-mouseover1 .element { height: 100px; overflow: auto; }
+
+/********************************************************************************/
+/* Solo para ejemplo de mouse over 2
+/********************************************************************************/
+#pag-textos-mouseover2 .mouse-over {
+    background: #FFFFFF;
+    border: dashed #00A5C0 1px;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    width: 10px;
+}
+
+#pag-textos-mouseover2 .mouse-over:hover {
+    background: #f6ae00;
+}
+
+#pag-textos-mouseover2 .contenido_sobre {
+    padding: 10px;
+    text-align: justify;
+    box-shadow: 7px 7px 5px #cccccc;
+    background: #FFFFFF;
+    border: 1px solid #aaa;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/********************************************************************************/
+/* Animaciones
+/********************************************************************************/
+#pag-media-animation1 .movi {
+    background: url(../content/mujer.png) no-repeat;
+    width: 200px;
+    height: 294px;
+    font-size: 50px;
+}
+
+#pag-media-animation1 .ion-arrow-right-a {
+    color: green;
+}
+
+#pag-media-animation1 .ion-arrow-down-a {
+    color: blue;
+}
+
+/********************************************************************************/
+/* CSS3 ANIMATION
+/********************************************************************************/
+#pag-media-animation3 .instruction { text-align: center; }
+#pag-media-animation3 .box_stressed { width: 700px; }
+#pag-media-animation3 .box_connection { width: 700px;  margin: 0 auto 10px; }
+#pag-media-animation3 .stave { background: url(../content/img17.png) no-repeat; width: 450px; height: 110px; margin: auto; position: relative; }
+#pag-media-animation3 .musical-note-name { width: 22px; height: 20px; position: absolute; font-size: 15px; color: #16a183; opacity: 0; background: #16a183; -webkit-animation-fill-mode: backwards; animation-duration: 10s; animation-fill-mode: backwards; }
+
+#pag-media-animation3 .musical-note { width: 15px; height: 12px; background: url(../content/img17_1.png) no-repeat; position: absolute; -webkit-animation-fill-mode: forwards; animation-name: musical-note; animation-duration: 10s; animation-fill-mode: forwards; }
+
+@keyframes musical-note { 0% { left: 0; top: 0; } 10% { left: 46px; top: 65px; } 20% { left: 87px; top: 54px; } 30% { left: 128px; top: 42px; } 40% { left: 164px; top: 30px; } 50% { left: 200px; top: 18px; } 60% { left: 247px; top: 60px; } 70% { left: 291px; top: 48px; } 80% { left: 337px; top: 36px; } 100% { left: 388px; top: 25px; }
+}
+
+@keyframes musical-note-mi {
+    0% { opacity: 0; } 10% { opacity: 0.4; } 20% { opacity: 0; } 30% { opacity: 0; } 40% { opacity: 0; } 50% { opacity: 0; } 60% { opacity: 0; } 70% { opacity: 0; } 80% { opacity: 0; } 100% { opacity: 0; }
+}
+#pag-media-animation3 .musical-note-name.mi { left: 44px; top: 90px;  animation-name: musical-note-mi; }
+
+@keyframes musical-note-sol {
+    0% { opacity: 0; } 10% { opacity: 0; } 20% { opacity: 0.4; } 30% { opacity: 0; } 40% { opacity: 0; } 50% { opacity: 0; } 60% { opacity: 0; } 70% { opacity: 0; } 80% { opacity: 0; } 100% { opacity: 0; }
+}
+#pag-media-animation3 .musical-note-name.sol { left: 82px; top: 89px;  animation-name: musical-note-sol; }
+
+@keyframes musical-note-si {
+    0% { opacity: 0; } 10% { opacity: 0; } 20% { opacity: 0; } 30% { opacity: 0.4; } 40% { opacity: 0; } 50% { opacity: 0; } 60% { opacity: 0; } 70% { opacity: 0; } 80% { opacity: 0; } 100% { opacity: 0; }
+}
+#pag-media-animation3 .musical-note-name.si { left: 129px; top: 89px;  animation-name: musical-note-si; }
+
+@keyframes musical-note-re {
+    0% { opacity: 0; } 10% { opacity: 0; } 20% { opacity: 0; } 30% { opacity: 0; } 40% { opacity: 0.4; } 50% { opacity: 0; } 60% { opacity: 0; } 70% { opacity: 0; } 80% { opacity: 0; } 100% { opacity: 0; }
+}
+#pag-media-animation3 .musical-note-name.re { left: 164px; top: 89px;  animation-name: musical-note-re; }
+
+@keyframes musical-note-fa {
+    0% { opacity: 0; } 10% { opacity: 0; } 20% { opacity: 0; } 30% { opacity: 0; } 40% { opacity: 0; } 50% { opacity: 0.4; } 60% { opacity: 0; } 70% { opacity: 0; } 80% { opacity: 0; } 100% { opacity: 0; }
+}
+#pag-media-animation3 .musical-note-name.fa { left: 201px; top: 89px;  animation-name: musical-note-fa; }
+
+@keyframes musical-note-fa-down {
+    0% { opacity: 0; } 10% { opacity: 0; } 20% { opacity: 0; } 30% { opacity: 0; } 40% { opacity: 0; } 50% { opacity: 0; } 60% { opacity: 0.4; } 70% { opacity: 0; } 80% { opacity: 0; } 100% { opacity: 0; }
+}
+#pag-media-animation3 .musical-note-name.fa-down { left: 247px; top: 90px;  animation-name: musical-note-fa-down; }
+
+@keyframes musical-note-la {
+    0% { opacity: 0; } 10% { opacity: 0; } 20% { opacity: 0; } 30% { opacity: 0; } 40% { opacity: 0; } 50% { opacity: 0; } 60% { opacity: 0; } 70% { opacity: 0.4; } 80% { opacity: 0; } 100% { opacity: 0; }
+}
+#pag-media-animation3 .musical-note-name.la { left: 291px; top: 90px;  animation-name: musical-note-la; }
+
+
+@keyframes musical-note-do {
+    0% { opacity: 0; } 10% { opacity: 0; } 20% { opacity: 0; } 30% { opacity: 0; } 40% { opacity: 0; } 50% { opacity: 0; } 60% { opacity: 0; } 70% { opacity: 0; } 80% { opacity: 0.4; } 100% { opacity: 0; }
+}
+#pag-media-animation3 .musical-note-name.do { left: 337px; top: 90px;  animation-name: musical-note-do; }
+
+@keyframes musical-note-mi-up {
+    0% { opacity: 0; } 10% { opacity: 0; } 20% { opacity: 0; } 30% { opacity: 0; } 40% { opacity: 0; } 50% { opacity: 0; } 60% { opacity: 0; } 70% { opacity: 0; } 80% { opacity: 0; } 100% { opacity: 0.4; }
+}
+#pag-media-animation3 .musical-note-name.mi-up { left: 386px; top: 90px; -webkit-animation-fill-mode: forwards; animation-name: musical-note-mi-up; animation-duration: 10s; animation-fill-mode: forwards; }
+
+
+/********************************************************************************/
+/* Imágenes con texto
+/********************************************************************************/
+#pag-contenidointeractivo-viewfirst .view-content { font-size: 12px; }
+#pag-contenidointeractivo-viewfirst .view-content h2 { color: #fff; border-bottom: dotted 2px #fff; }
+
+/********************************************************************************/
+/* Imágenes para ampliar
+/********************************************************************************/
+.expand-image { width: 200px; height: 200px; margin: 0 auto 5px; }
+
+/********************************************************************************/
+/* Pointers with text
+/********************************************************************************/
+#pag-contenidointeractivo-pointers .box_l { background: url(../content/cuerpo.png) no-repeat center top; margin: auto; width: 117px; height: 240px; position: relative; }
+#pag-contenidointeractivo-pointers .note_1 { left: -30px; top: 13px; }
+#pag-contenidointeractivo-pointers .note_2 { left: 72px; top: 100px; }
+#pag-contenidointeractivo-pointers .note_3 { left: -45px; top: 155px; }
+#pag-contenidointeractivo-pointers .note_4 { left: 75px; top: 195px; }
+
+/********************************************************************************/
+/* Actividad Quiz
+/********************************************************************************/
+.pag-actividades-cuestionario .chalkboard_content {
+    min-height: 350px;
+}
+
+.jpit_activities_quiz_question_answers { height: 150px; overflow: auto; }
+
+/********************************************************************************/
+/* Actividad Sopa de letras
+/********************************************************************************/
+.pag-actividades-sopa .chalkboard_content {
+    min-height: 350px;
+}
+
+/********************************************************************************/
+/* Actividad Sopa de letras
+/********************************************************************************/
+.pag-actividades-crucigrama .chalkboard_content {
+    min-height: 350px;
+    height: auto;
+}
+
+/********************************************************************************/
+/* Actividad arrastrar y soltar - apareamiento
+/********************************************************************************/
+#arrastrar1.jpit-activities-droppable .words_container {
+    height: 50px;
+}
+
+#arrastrar1.jpit-activities-droppable table {
+    empty-cells: show;
+    clear: both;
+}
+
+#arrastrar1.jpit-activities-droppable th {
+    color: #000;
+    padding: 5px;
+    text-align: right;
+}
+
+#arrastrar1.jpit-activities-droppable td.droppable {
+    width: 80px;
+    height: 16px;
+}
+
+#arrastrar1.jpit-activities-droppable td.conection {
+    width: 30px;
+    border: none;
+    padding: 5px 10px;
+}
+
+#arrastrar1.jpit-activities-droppable .draggable {
+    width: 80px;
+}
+
+/********************************************************************************/
+/* Actividad arrastrar y soltar - dialogo
+/********************************************************************************/
+#arrastrar2.jpit-activities-droppable .draggable {
+    width: 90px;
+    float: left;
+    margin-bottom: 5px;
+    clear: both;
+    height: 15px;
+}
+
+#arrastrar2.jpit-activities-droppable .droppable {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid;
+    width: 100px;
+    height: 25px;
+}
+
+#arrastrar2.jpit-activities-droppable .jpit_activities_jpitdroppable_dropped {
+    border: none;
+    background-color: transparent;
+    color: #000;
+    width: 92px;
+    margin: 0;
+    float: unset;
+}
+
+#arrastrar2.jpit-activities-droppable .jpit_activities_jpitdroppable_dropped.draggable.wrong {
+    color: #D60C1B;
+}
+
+/********************************************************************************/
+/* Actividad arrastrar y soltar - completar
+/********************************************************************************/
+#arrastrar3.jpit-activities-droppable table {
+    empty-cells: show;
+    border-spacing: 0 5px;
+    color: #fff;
+}
+
+#arrastrar3.jpit-activities-droppable th {
+    color: #000;
+    padding: 5px;
+    text-align: right;
+    font-weight: normal;
+}
+
+#arrastrar3.jpit-activities-droppable td {
+    border: 1px dashed #777777;
+    text-align: left;
+    width: 180px;
+}
+
+#arrastrar3.jpit-activities-droppable .draggable {
+    margin: 0 0 5px 0;
+    width: 180px;
+    text-align: left;
+}
+
+#arrastrar3.jpit-activities-droppable .jpit_activities_jpitdroppable_dropped {
+    background-color: transparent;
+    color: #000000;
+    border-color: transparent;
+}
+
+#arrastrar3.jpit-activities-droppable .jpit_activities_jpitdroppable_dropped.draggable.wrong {
+    color: #D60C1B;
+}
+
+#arrastrar3.jpit-activities-droppable .draggable.wrong,
+#arrastrar3.jpit-activities-droppable .droppable.wrong {
+    background-color: transparent;
+}
+
+/********************************************************************************/
+/* Actividad arrastrar y soltar - insertar
+/********************************************************************************/
+#arrastrar4.jpit-activities-droppable table {
+    empty-cells: show;
+    border-spacing: 0 5px;
+}
+
+#arrastrar4.jpit-activities-droppable th {
+    padding: 5px;
+    text-align: right;
+    border-right: none;
+}
+
+#arrastrar4.jpit-activities-droppable td {
+    padding: 5px;
+    border: none;
+    border-bottom: 1px dashed #777777;
+    text-align: left;
+    width: 200px;
+}
+
+#arrastrar4.jpit-activities-droppable .draggable {
+    float: left;
+    margin: 0 5px 5px 0;
+}
+
+#arrastrar4.jpit-activities-droppable .wrong {
+    border-color: #D60C1B;
+    color: #D60C1B;
+    background-color: transparent;
+}
+
+/********************************************************************************/
+/* Actividad arrastrar y soltar - muchos a uno
+/********************************************************************************/
+#arrastrar5 .droppable {
+    width: 300px;
+    height: 150px;
+}
+
+#arrastrar5 .draggable {
+    display: inline-block;
+}
+
+/********************************************************************************/
+/* Actividad arrastrar y soltar multiple
+/********************************************************************************/
+#arrastrargrupos table {
+    margin: auto;
+    max-width: 590px;
+}
+
+#arrastrargrupos h5 {
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    border-bottom: 2px dotted #95B0CB;
+}
+
+#arrastrargrupos td {
+    display: inline-block;
+}
+
+#arrastrargrupos td .target {
+    min-height: 150px;
+    width: 190px;
+    overflow: auto;
+}
+
+#arrastrargrupos.jpit-activities-multidroppable .sources {
+    width: 100%;
+    height: 65px;
+    margin: 10px auto 0;
+}
+
+#arrastrargrupos.jpit-activities-multidroppable .draggable {
+    width: 165px;
+    float: left;
+    margin: 0 1px 5px;
+}
+
+#arrastrargrupos table .draggable.disabled {
+    cursor: default;
+}
+
+#arrastrargrupos.jpit-activities-multidroppable .buttons {
+    text-align: center;
+    padding: 5px 0;
+    clear: both;
+}
+
+/********************************************************************************/
+/* Ordenamiento en matríz
+/********************************************************************************/
+.jpit-activities-sortable.matriz ul.sortable {
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    margin: auto;
+    float: none;
+    padding: 5px;
+    border: 1px solid;
+}
+
+.jpit-activities-sortable.matriz .sortable-item {
+    width: 44px;
+    height: 24px;
+    padding: 10px 0;
+    margin: 2px;
+    border: 1px solid #95B0CB;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 2px #aaa;
+    background-color: #ffffff;
+}
+
+.jpit-activities-sortable.matriz ul.sortable-horizontal .sortable-item:hover {
+    background-color: rgba(25, 56, 201, 0.1);
+}
+
+.jpit-activities-sortable.matriz ul.sortable-horizontal .sortable-item:hover:before {
+    content: "\f263";
+    font-size: 12px;
+    left: 0;
+    top: 0;
+}
+
+/********************************************************************************/
+/* Actividad Clasificar, formato de marcador.
+/********************************************************************************/
+.jpit-activities-check .check_left {
+    margin-bottom: 10px;
+}
+
+.jpit-activities-check .check_left .word_content {
+    background: #ffffff none repeat scroll 0 0;
+    box-shadow: 3px 3px 3px #dadbdc;
+    margin-bottom: 10px;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.jpit-activities-check .buttons {
+    text-align: center;
+}
+
+.jpit-activities-check .buttons button.yes,
+.jpit-activities-check .buttons button.not {
+    font-size: 20px;
+}
+
+.jpit-activities-check .box_result {
+    float: left;
+    font-size: 20px;
+    text-align: center;
+}
+
+.jpit-activities-check .box_result > div {
+    background-color: #ffffff;
+    box-shadow: 3px 3px 3px #cbcccc;
+    padding: 10px;
+    width: 110px;
+    float: left;
+    margin: 0 10px;
+}
+
+.jpit-activities-check .box_result .correct {
+    color: #8bc541;
+}
+.jpit-activities-check .box_result .hits {
+    font-size:30px;
+}
+
+.jpit-activities-check .box_result .wrong {
+    color: #d60c1b;
+}
+.jpit-activities-check .box_result .miss {
+    font-size:30px;
+}
+
+/********************************************************************************/
+/* Actividad marcar
+/********************************************************************************/
+.pag-actividades-marcar .chalkboard_content {
+    height: 520px;
+}
+
+.jpit-activities-mark {
+    width: 400px;
+    margin: auto;
+}
+
+/********************************************************************************/
+/* Actividad seleccionar 1
+/********************************************************************************/
+.pag-actividades-naruto .jpit-activities-selection .col-2 > div {
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding: 2px 5px;
+    white-space: nowrap;
+}
+
+.pag-actividades-naruto .jpit-activities-selection .left {
+    text-align: right;
+}
+
+.pag-actividades-naruto .jpit-activities-selection .right {
+    text-align: left;
+}
+
+.pag-actividades-naruto .jpit-activities-selection .left .radio {
+    float: right;
+    margin-left: 5px;
+}
+
+.pag-actividades-naruto .jpit-activities-selection .right .radio {
+    float: left;
+    margin-right: 5px;
+}
+
+.pag-actividades-naruto .row {
+    display: flex;
+}
+
+/********************************************************************************/
+/* Actividad seleccionar 2
+/********************************************************************************/
+.pag-actividades-escritores .jpit-activities-selection li {
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+
+/********************************************************************************/
+/* Actividad formulario
+/********************************************************************************/
+.jpit-activities-form .sheet {
+    background: url(../img/bg_papel.png) repeat-x left top;
+    width: 100%;
+    margin: auto;
+    padding-top: 35px;
+}
+
+.jpit-activities-form .sheet_body {
+    background-color: #f6f5f2;
+    padding: 10px 20px;
+    box-shadow: 3px 3px 0px #cbcccc;
+}
+
+.jpit-activities-form input[type=text] {
+    border: 2px dotted #aaaaaa;
+    width: 94%;
+    margin-bottom: 10px;
+    padding: 5px 3%;
+}
+
+.jpit-activities-form textarea {
+    width: 94%;
+    height: 40px;
+    padding: 3%;
+    border: 2px dotted #aaaaaa;
+}
+/********************************************************************************/
+/* Ajustes específicos
+/********************************************************************************/
+.vertical-menu-both-sides {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    max-width: 1300px;
+    margin-top: 15px;
+}
+
+.vertical-menu-both-sides .chalkboard_both_items_left {
+    width: auto;
+    max-width: 23%;
+    position: absolute;
+    right: 75%;
+}
+
+.vertical-menu-both-sides .chalkboard_both_items_right {
+    width: 10%;
+    position: absolute;
+    left: 75%;
+    max-width: 80px;
+}
+
+#body {min-height: 90vh;}
+
+.vertical-menu-both-sides .chalkboard_both_items_left .chalkboard_both_item h2 {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.chalkboard_both_item.button:first-child, 
+.chalkboard_both_current.button.active:first-child {
+    height: auto;
+}
+
+.chalkboard_both_items_right .chalkboard_both_item.button h3, 
+.chalkboard_both_items_right .chalkboard_both_current.button.active h3 {
+    color: transparent;
+    background: url(../img/medios.png) no-repeat center;
+    background-size: 100%;
+}
+
+.chalkboard_both_item.button h3, 
+.chalkboard_both_current.button.active h3 {
+    font-size: 18px;
+    line-height: 20px;
+    margin: 5px;
+}
+
+#expand_image_content img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.expand-image {
+    box-shadow: none;
+}
+
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable {
+    max-width: 100%;
+}
+/********************************************************************************/
+/* Mapas de módulos
+/********************************************************************************/
+.modulos {
+    position: relative;
+    height: 50vh;
+}
+
+.modulos .modulo {
+    position: absolute;
+    width: 40%;
+    padding-top: 17%;
+    background-size: 100% !important;
+}
+
+.modulos .modulo.uno {
+    background: url(../content/slide3/m1up.png) no-repeat;
+    right: 55%;
+    bottom: 25vh;
+    
+}
+
+.modulos .modulo.uno.current,
+.modulos .modulo.uno:hover {
+    filter: grayscale(1);
+    transition: filter 1s;
+}
+
+.modulos .modulo.dos {
+    background: url(../content/slide3/m2up.png) no-repeat;
+    left: 55%;
+    bottom: 25vh;
+    transition: filter .5s;
+}
+
+.modulos .modulo.dos.current,
+.modulos .modulo.dos:hover {
+    filter: grayscale(1);
+    transition: filter 1s;
+}
+
+.modulos .modulo.tres {
+    background: url(../content/slide3/m3up.png) no-repeat;
+    top: 25vh;
+    right: 55%;
+    transition: filter .5s;
+}
+
+.modulos .modulo.tres.current,
+.modulos .modulo.tres:hover {
+    filter: grayscale(1);
+    transition: filter 1s;
+}
+
+.modulos .modulo.cuatro {
+    background: url(../content/slide3/m4up.png) no-repeat;
+    top: 25vh;
+    left: 55%;
+    transition: filter .5s;
+}
+
+.modulos .modulo.cuatro.current,
+.modulos .modulo.cuatro:hover {
+    filter: grayscale(1);
+    transition: filter 1s;
+}
+
+.modulos .center {
+    position: absolute;
+    background: url(../content/slide3/botoncentro.png) no-repeat center;
+    background-size: 100%;
+    width: 35%;
+    padding-top: 35%;
+    bottom: 0;
+    top: 0;
+    left: 32%;
+    border-radius: 50%;
+}
+
+.modulos #modulo1-1,
+.modulos #modulo1 {
+    top: 0;
+    left: 0;
+}
+
+.modulos #modulo2-2,
+.modulos #modulo2 {
+    top: 0;
+    right: 0;
+}
+
+.modulos #modulo3-3,
+.modulos #modulo3 {
+    bottom: 0;
+    left: 0;
+}
+
+.modulos #modulo4-4,
+.modulos #modulo4 {
+    bottom: 0;
+    right: 0;
+}
+
+.modulos .wf-content img {
+    max-width: 100%;
+    max-height: 40vh;
+}
+
+.modulos .wf-content {
+    background-color: #000000a0;
+    max-width: 40%;
+    max-height: 40vh;
+    z-index: 99;
+    box-shadow: none;
+    padding-top: 25px;
+    min-width: 400px;
+}
+
+#pag-intro-tema1 .wf-content {
+    box-shadow: none;
+    background-color: #000;
+}
+
+#pag-intro-tema1 button.w-content-controler,
+#pag-intro-tema1 button.general.wf-content-controler {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#pag-intro-tema1 .w-content img {
+    max-height: 50vh;
+}
+/********************************************************************************/
+/* Actividad 1
+/********************************************************************************/
+#act-1 table {
+    margin: auto;
+    width: 100%;
+}
+
+#act-1 h5 {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+#act-1 td {
+    height: 50vh;
+    width: 50%;
+    vertical-align: top;
+}
+
+#act-1 td .target {
+    min-height: 80%;
+    max-height: 50vh;
+    overflow: auto;
+}
+
+#act-1.jpit-activities-multidroppable .sources {
+    width: 100%;
+    height: 65px;
+    margin: 10px auto 0;
+}
+
+#act-1.jpit-activities-multidroppable .draggable {
+    width: 165px;
+    float: left;
+    margin: 0 1px 5px;
+}
+
+#act-1 table .draggable.disabled {
+    cursor: default;
+}
+
+#act-1.jpit-activities-multidroppable .buttons {
+    text-align: center;
+    padding: 5px 0;
+    clear: both;
+}
+/********************************************************************************/
+/* Slide 4
+/********************************************************************************/
+#mallacol {
+    overflow: unset;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+
+#mallacol audio {
+    margin: auto;
+    display: flex;
+}
+
+#mallacol .layers {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+#mallau, #mallau2 {
+    z-index: 1;
+}
+/********************************************************************************/
+/* Ajustes específicos
+/********************************************************************************/
+#ver-mas4 .instrumentos {
+    position: relative;
+    height: 50vh;
+}
+
+#ver-mas4 .instrumento {
+    position: absolute;
+    width: 30vh;
+    padding-top: 30vh;
+    background-size: 100% !important;
+}
+
+#ver-mas4 .instrumento.uno {
+    background: url(../content/slide8/diplomatico.png) no-repeat;
+    right: 50%;
+    bottom: 50%;
+    transition: filter .5s;
+}
+
+#ver-mas4 .instrumento.uno.current,
+#ver-mas4 .instrumento.uno:hover {
+    filter: grayscale(1);
+    transition: filter 1s;
+}
+
+#ver-mas4 .instrumento.dos {
+    background: url(../content/slide8/informacional.png) no-repeat;
+    left: 50%;
+    bottom: 50%;
+    transition: filter .5s;
+}
+
+#ver-mas4 .instrumento.dos.current,
+#ver-mas4 .instrumento.dos:hover {
+    filter: grayscale(1);
+    transition: filter 1s;
+}
+
+#ver-mas4 .instrumento.tres {
+    background: url(../content/slide8/militar.png) no-repeat;
+    top: 50%;
+    right: 50%;
+    transition: filter .5s;
+}
+
+#ver-mas4 .instrumento.tres.current,
+#ver-mas4 .instrumento.tres:hover {
+    filter: grayscale(1);
+    transition: filter 1s;
+}
+
+#ver-mas4 .instrumento.cuatro {
+    background: url(../content/slide8/economico.png) no-repeat;
+    top: 50%;
+    left: 50%;
+    transition: filter .5s;
+}
+
+#ver-mas4 .instrumento.cuatro.current,
+#ver-mas4 .instrumento.cuatro:hover {
+    filter: grayscale(1);
+    transition: filter 1s;
+}
+
+#ver-mas4 .center {
+    position: absolute;
+    background: url(../content/slide8/botoncentro.png) no-repeat center;
+    background-size: 100%;
+    width: 18vh;
+    top: 0;
+    bottom: 0;
+    left: -9vh;
+    border-radius: 50%;
+}
+
+#ver-mas4 #instrumento1 {
+    bottom: 50%;
+    right: 55%;
+}
+
+#ver-mas4 #instrumento2 {
+    bottom: 50%;
+    left: 55%;
+}
+
+#ver-mas4 #instrumento3 {
+    top: 50%;
+    right: 55%;
+}
+
+#ver-mas4 #instrumento4 {
+    top: 50%;
+    left: 55%;
+}
+
+#ver-mas4 .contenidos .content img {
+    max-width: 100%;
+    max-height: 40vh;
+}
+
+#ver-mas4 .contenidos .content {
+    background-color: transparent;
+    max-width: 40%;
+    max-height: 40vh;
+    z-index: 99;
+    box-shadow: none;
+    min-width: 200px;
+    position: absolute;
+}
+
+#ver-mas4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../content/slide8/fondo.png) no-repeat center;
+    background-size: 100%;
+}
+
+#ver-mas4 .instruction {
+    position: absolute;
+    top: 0;
+    color: #fff;
+}
+/********************************************************************************/
+/* Slide 3
+/********************************************************************************/
+#pag-mapa .ui-widget.ui-widget-content {
+    min-width: 500px;
+}
+
+#ui-id-46 {
+    width: 500px;
+}
+
+.module img {
+    width: 100%;
+}
+/********************************************************************************/
+/* Principios de la guerra
+/********************************************************************************/
+#pag-recordando .principios {
+    width: 100%;
+    padding-top: 56%;
+    position: relative;
+    background: url(../content/slide9/s9-1fondo.png) no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#pag-recordando .principios .title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#pag-recordando .principios .title h4 {
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+#pag-recordando .principios button.general {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    background-size: 100% !important;
+    transition: transform .5s;
+    font-weight: normal;
+
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+#pag-recordando .principios button.general:hover {
+    transform: scale(1.2);
+    transition: transform .5s;
+    font-weight: bold;
+}
+
+#pag-recordando .principios button.general span {
+    color: #fff;
+    background-color: #f7931e80;
+    padding: 1%;
+}
+
+#pag-recordando .principios button.general.objetivo {
+    right: 1%;
+    top: 1%;
+    background: url(../content/slide9/avion_combate.png) no-repeat;
+    width: 23%;
+    padding-top: 9%;
+}
+
+#pag-recordando .principios button.general.ofensiva {
+    bottom: 10%;
+    right: 11%;
+    background: url(../content/slide9/tanque.png) no-repeat;
+    width: 27%;
+    padding-top: 16%;
+    padding-bottom: 9%;
+}
+
+#pag-recordando .principios button.general.masa {
+    bottom: 8%;
+    left: 17%;
+}
+
+#pag-recordando .principios button.general.fuerzas {
+    bottom: 10%;
+    left: 17%;
+    background: url(../content/slide9/soldados_1.png) no-repeat;
+    width: 16%;
+    padding-bottom: 11%;
+}
+
+#pag-recordando .principios button.general.fuerzas span {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 100%;
+}
+
+#pag-recordando .principios button.general.maniobra {
+    bottom: 13%;
+    left: 25%;
+}
+
+#pag-recordando .principios button.general.perseverancia {
+    top: 8%;
+    left: 2%;
+    background: url(../content/slide9/avion_carga.png) no-repeat;
+    width: 35%;
+    padding-top: 14%;
+}
+
+#pag-recordando .principios button.general.perseverancia span {
+    position: absolute;
+    bottom: -20%;
+    left: 10%;
+    width: 50%;
+}
+
+#pag-recordando .principios button.general.mando {
+    bottom: 1%;
+    left: 37%;
+    background: url(../content/slide9/soldados_2.png) no-repeat;
+    width: 27%;
+    padding-bottom: 16%;
+}
+
+#pag-recordando .principios button.general.mando span {
+    position: absolute;
+    top: -15%;
+    left: 0;
+    width: 100%;
+}
+
+#pag-recordando .principios button.general.seguridad {
+    bottom: 0;
+    left: 0;
+    background: url(../content/slide9/seguridad.png) no-repeat;
+    width: 16%;
+    padding-top: 15%;
+    padding-bottom: 5%;
+}
+
+#pag-recordando .principios button.general.seguridad:hover {
+    transform: scale(1.2) translate(10px, -10px);
+}
+
+#pag-recordando .principios button.general.sorpresa {
+    top: 27%;
+    left: 36%;
+    background: url(../content/slide9/helicoptero.png) no-repeat;
+    width: 35%;
+    padding-bottom: 16%;
+}
+
+#pag-recordando .principios button.general.sorpresa span {
+    position: absolute;
+    top: -15%;
+    left: 10%;
+    width: 50%;
+}
+
+#pag-recordando .principios button.general.sencillez {
+    bottom: 10%;
+    left: 36%;
+}
+
+#pag-recordando .principios button.general.restriccion {
+    right: 0;
+    bottom: 0;
+    background: url(../content/slide9/restriccion.png) no-repeat;
+    width: 16%;
+    padding-top: 8%;
+    padding-bottom: 5%;
+}
+
+#pag-recordando .principios button.general.restriccion:hover {
+    transform: scale(1.2) translate(-8%, -8%);
+}
+
+#pag-recordando .principios button.general.legitimidad {
+    left: 42%;
+    bottom: 0;   
+}
+
+#pag-recordando .wf-content {
+    bottom: 0px;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    margin-bottom: 100%;
+    margin-left: 100%;
+    margin-right: 100%;
+  }
+
+  to {
+    margin-top: 0%;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/********************************************************************************/
+/* Slide 10
+/********************************************************************************/
+.jpit-activities-quiz {
+    background: url(../content/slide10/fondo.png) repeat-y;
+    background-size: 100%;
+}
+
+.jpit-activities-quiz .box_media {
+    position: absolute;
+    right: 20%;
+    height: 60%;
+}
+
+.jpit-activities-quiz .box_media img {height: 100%;}
+
+.jpit_activities_quiz_question_feedback_false,
+.jpit_activities_quiz_question_feedback_true {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+}
+
+.jpit-activities-quiz .box_end {
+    position: absolute;
+    bottom: 40%;
+    background-color: #3b3b3bd4;
+}
+/********************************************************************************/
+/* Slide 11
+/********************************************************************************/
+#pag-dominios .dominios {
+    width: 100%;
+    padding-top: 57%;
+    background: url(../content/slide11/fondo.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+#pag-dominios .dominios .fundamento {
+    position: absolute;
+    background-size: 100% !important;
+    transition: all .5s;
+}
+
+#pag-dominios .dominios .fundamento:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+#pag-dominios .fundamento.ciber {
+    width: 92%;
+    height: 87%;
+    background: url(../content/slide11/ciberespacial.png) no-repeat;
+    top: 10%;
+    left: 4%;
+}
+
+#pag-dominios .fundamento.ciber:hover {
+    transform: scale(1.05);
+}
+
+#pag-dominios .dominios .fondo {
+    width: 84%;
+    height: 81%;
+    background: url(../content/slide11/imagen.png) no-repeat;
+    background-size: 100%;
+    top: 13%;
+    left: 8%;
+    position: absolute;
+}
+
+#pag-dominios .fundamento.espacial {
+    width: 83%;
+    height: 27%;
+    background: url(../content/slide11/espacial.png) no-repeat;
+    top: 8%;
+    left: 10%;
+}
+
+#pag-dominios .fundamento.aereo {
+    width: 63%;
+    height: 20%;
+    background: url(../content/slide11/aereo.png) no-repeat;
+    top: 32%;
+    left: 22%;
+}
+
+#pag-dominios .fundamento.terrestre {
+    width: 50%;
+    height: 25%;
+    background: url(../content/slide11/terrestre.png) no-repeat;
+    top: 55%;
+    left: 9%;
+}
+
+#pag-dominios .fundamento.maritimo {
+    width: 25%;
+    height: 36%;
+    background: url(../content/slide11/maritimo.png) no-repeat;
+    top: 56%;
+    left: 67%;
+}
+/********************************************************************************/
+/* Slide 11-1
+/********************************************************************************/
+#pag-dominios .row {align-items: center;}
+#pag-dominios .col-2 h5 {margin-top: 0; margin-bottom: 10px;}
+/********************************************************************************/
+/* Slide 12 h1
+/********************************************************************************/
+#pag-principios .princ-planeamiento {
+    background: url(../content/slide12/h1/general.png) no-repeat;
+    background-size: 100%;
+    padding-top: 57%;
+    position: relative;
+}
+
+#pag-principios .princ-planeamiento .tooltip {
+    position: absolute;
+    background-size: 100% !important;
+}
+
+#pag-principios .princ-planeamiento .tooltip:hover {
+    transform: scale(1.1);
+}
+
+#pag-principios .princ-planeamiento .integrado {
+    width: 22%;
+    height: 23%;
+    top: 72%;
+    left: 32.5%;
+    background: url(../content/slide12/h1/1.png) no-repeat;
+}
+
+#pag-principios .princ-planeamiento .recursos {
+    width: 22.8%;
+    height: 19%;
+    top: 62%;
+    left: 26.5%;
+    background: url(../content/slide12/h1/2.png) no-repeat;
+}
+
+#pag-principios .princ-planeamiento .riesgos {
+    width: 23.8%;
+    height: 19%;
+    top: 48.2%;
+    left: 27.8%;
+    background: url(../content/slide12/h1/3.png) no-repeat;
+}
+#pag-principios .princ-planeamiento .ambiente {
+    width: 17.8%;
+    height: 32%;
+    top: 33.4%;
+    left: 39.7%;
+    background: url(../content/slide12/h1/4.png) no-repeat;
+}
+#pag-principios .princ-planeamiento .decisiones {
+    width: 15.8%;
+    height: 45%;
+    top: 21%;
+    left: 55%;
+    background: url(../content/slide12/h1/5.png) no-repeat;
+}
+#pag-principios .princ-planeamiento .adaptativo {
+    width: 15.3%;
+    height: 58%;
+    top: 12.3%;
+    left: 63%;
+    background: url(../content/slide12/h1/6.png) no-repeat;
+}
+/********************************************************************************/
+/* Slide 12 h2
+/********************************************************************************/
+#pag-principios .h2 {
+    background: url(../content/slide12/h2/general.png) no-repeat;
+    background-size: 100%;
+    padding-top: 53%;
+    position: relative;
+}
+
+#pag-principios .h2 .tooltip {
+    width: 22%;
+    height: 34%;
+    top: 38.8%;
+    position: absolute;
+    background-size: 100% !important
+}
+
+#pag-principios .h2 .tooltip:hover {
+    transform: scale(1.1);
+}
+
+#pag-principios .h2 .preceptos {
+    left: 17.6%;
+    background: url(../content/slide12/h2/1.png) no-repeat;
+}
+#pag-principios .h2 .conjuntez {
+    left: 39.5%;
+    background: url(../content/slide12/h2/2.png) no-repeat;
+}
+#pag-principios .h2 .diagrama {
+    width: 18%;
+    left: 61.4%;
+    background: url(../content/slide12/h2/3.png) no-repeat;
+}
+/********************************************************************************/
+/* Slide 12.1
+/********************************************************************************/
+#pag-principios .operacionales {
+    background: url(../content/slide12/fondo.png) no-repeat;
+    background-size: 100%;
+    padding-top: 53%;
+    position: relative;
+}
+
+#pag-principios .operacionales .libro {
+    background: url(../content/slide12/libro.png) no-repeat;
+    background-size: 100%;
+    width: 39%;
+    padding-top: 47%;
+    position: absolute;
+    top: 7%;
+    left: 17%;
+}
+
+#pag-principios .operacionales .consciencia,
+#pag-principios .operacionales .planeamiento,
+#pag-principios .operacionales .ejecucion,
+#pag-principios .operacionales .evaluacion {
+    background-size: 100% !important;
+    width: 38%;
+    padding-top: 13%;
+    position: absolute;
+    cursor: pointer;
+}
+
+#pag-principios .operacionales .consciencia {
+    background: url(../content/slide12/1.png) no-repeat;
+    top: 60%;
+    left: 48%;
+}
+
+#pag-principios .operacionales .planeamiento {
+    background: url(../content/slide12/2.png) no-repeat;
+    top: 44%;
+    left: 47%;
+}
+
+#pag-principios .operacionales .ejecucion {
+    background: url(../content/slide12/3.png) no-repeat;
+    top: 27%;
+    left: 45%;
+}
+
+#pag-principios .operacionales .evaluacion {
+    background: url(../content/slide12/4.png) no-repeat;
+    top: 9%;
+    left: 43%;
+}
+
+#pag-principios .operacionales .consciencia:hover,
+#pag-principios .operacionales .planeamiento:hover,
+#pag-principios .operacionales .ejecucion:hover,
+#pag-principios .operacionales .evaluacion:hover {
+    transform: scale(1.1);
+}
+/********************************************************************************/
+/* Slide 12.2
+/********************************************************************************/
+#pag-principios .planteamiento {
+    background: url(../content/slide12/fondo.png) no-repeat;
+    background-size: 100%;
+    padding-top: 53%;
+    position: relative;
+}
+
+#pag-principios .planteamiento .comp {
+    background: url(../content/slide12/12-2/portatil.png) no-repeat;
+    background-size: 100%;
+    width: 39%;
+    padding-top: 24%;
+    position: absolute;
+    top: 26%;
+    left: 7%;
+}
+
+#pag-principios .planteamiento .guia,
+#pag-principios .planteamiento .conceptos,
+#pag-principios .planteamiento .planes,
+#pag-principios .planteamiento .rate {
+    background-size: 100% !important;
+    width: 58%;
+    padding-top: 14%;
+    position: absolute;
+    cursor: pointer;
+    left: 42%;
+}
+
+#pag-principios .planteamiento .guia {
+    background: url(../content/slide12/12-2/1.png) no-repeat;
+    top: 13.5%;
+}
+
+#pag-principios .planteamiento .conceptos {
+    background: url(../content/slide12/12-2/2.png) no-repeat;
+    top: 30%;
+}
+
+#pag-principios .planteamiento .planes {
+    background: url(../content/slide12/12-2/3.png) no-repeat;
+    top: 46%;
+    padding-top: 9%;
+}
+
+#pag-principios .planteamiento .rate {
+    background: url(../content/slide12/12-2/4.png) no-repeat;
+    top: 52%;
+}
+
+#pag-principios .planteamiento .guia:hover,
+#pag-principios .planteamiento .conceptos:hover,
+#pag-principios .planteamiento .planes:hover,
+#pag-principios .planteamiento .rate:hover {
+    transform: scale(1.06);
+    filter: brightness(1.2);
+}
+/********************************************************************************/
+/* Slide 13
+/********************************************************************************/
+#pag-rango .rango {
+    background: url(../content/slide13/s13.png) no-repeat;
+    background-size: 100%;
+    padding-top: 50%;
+    position: relative;
+}
+
+#pag-rango .rango .tooltip {
+    height: 21%;
+    top: 31%;
+    position: absolute;
+    background-size: 100% !important;
+}
+
+#pag-rango .rango .paz {
+    left: 8%;
+    border-radius: 30px;
+    width: 40%;
+}
+#pag-rango .rango .encuentro {
+    width: 10%;
+    border-radius: 50%;
+    left: 8%;
+}
+
+#pag-rango .rango .disuacion {
+    width: 10%;
+    border-radius: 50%;
+    left: 38%;
+}
+
+#pag-rango .rango .respuesta {
+    width: 10%;
+    border-radius: 50%;
+    left: 52.8%;
+}
+
+#pag-rango .rango .campanas {
+    width: 25%;
+    border-radius: 30px;
+    left: 68%;
+}
+
+/********************************************************************************/
+/* Slide 13.1
+/********************************************************************************/
+#s13-1 .teoria {
+    background: url(../content/slide13/s13-1.png) no-repeat;
+    background-size: 100%;
+    padding-top: 56%;
+    position: relative;
+}
+
+#s13-1 .teoria .tooltip {
+    height: 6%;
+    top: 31%;
+    position: absolute;
+    background-size: 100% !important;
+}
+
+#s13-1 .teoria .endurecimiento {
+    width: 9.5%;
+    left: 15.3%;
+    top: 23%;
+}
+#s13-1 .teoria .debates {
+    width: 8%;
+    left: 25.3%;
+    top: 29%;
+}
+
+#s13-1 .teoria .acciones {
+    width: 8%;
+    left: 33.6%;
+    top: 35%;
+}
+
+#s13-1 .teoria .imagenes {
+    width: 8%;
+    left: 42%;
+    top: 41%;
+}
+
+#s13-1 .teoria .perdida {
+    width: 16%;
+    left: 50.4%;
+    top: 47%;
+    height: 12%;
+}
+
+#s13-1 .teoria .lanzamientos {
+    width: 8.8%;
+    height: 10.6%;
+    left: 67%;
+    top: 59.4%;
+}
+
+#s13-1 .teoria .fragmentacion {
+    left: 76.2%;
+    width: 8.8%;
+    top: 70%;
+    height: 8.4%;
+}
+
+#s13-1 .teoria .juntos {
+    top: 78.5%;
+    left: 85.4%;
+    width: 6%;
+    height: 9%;
+}
+
+#s13-1 .teoria .inferior {
+    top: 87%;
+    left: 15.3%;
+    width: 76%;
+    height: 11.4%;
+}
+
+#s13-1 .teoria .superior {
+    top: 10%;
+    left: 15.3%;
+    width: 76%;
+    height: 12.5%;
+}

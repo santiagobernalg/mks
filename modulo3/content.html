@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="img/icon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/fonts/Lato/Lato-Regular.ttf" />
+    <link rel="stylesheet" type="text/css" href="css/fonts/Lato/Lato-Light.ttf" />
+    <title>PROCESO DE PLANEAMIENTO CONJUNTO</title>
+    
+    <link href="components/jquery/css/custom/jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <link href="components/ionicons/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link href="components/pit/css/jpit_quiz.css" rel="stylesheet" type="text/css">
+    <link href="components/csscircle/circle.css" rel="stylesheet" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="components/jquery/jquery.min.js"></script>
+    <script src="components/jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="components/jquery-mobile/jquery.ui.touch-punch.min.js"></script>
+
+    <script src="components/interact/interact.min.js"></script>
+    <script src="components/pit/jpit_api.js"></script>
+    <script src="components/pit/utilities/jpit_utilities.js"></script>
+    <script src="components/pit/activity/jpit_activity.js"></script>
+    <script src="components/pit/resources/jpit_resource.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/lang.es.js"></script>
+    <script src="js/lib.js"></script>
+    <script src="js/mobilelib.js"></script>
+    <script src="components/scorm/SCORM_12_APIWrapper.js"> </script>
+    <script src="components/scorm/scorm_api.js"> </script>
+
+    <script type="text/javascript" src="components/fresco/dist/js/fresco.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="components/fresco/dist/css/fresco.css"/>
+
+    <style type='text/css'>
+
+        body {
+            background-color: rgba(242, 242, 242, 0.7);
+        }
+
+        body.loading {
+            text-align: center;
+        }
+
+        body.loading:after {
+            content: "";
+            background: url(img/loading.gif) no-repeat bottom center;
+            width: 130px;
+            height: 30px;
+            display: block;
+            margin: auto;
+            padding-bottom: 20px;
+        }
+
+        body.loading #body {
+            display: none;
+        }
+    </style>
+
+</head>
+<body class="loading" data-debug="true" data-model="scorm" data-display-mode="slider" data-approve-limit="80" data-activities-percentaje="80" data-mobile-mode="512">
+    <div id="body" class="not_print">
+        <div id="not_scorm_msg" style="display: none;"></div>
+
+        <header>
+            <div class="header">
+                <img src="img/bg_header.png" />
+            </div>
+            <nav label="Principal" class="horizontal main" data-offset="true">
+                <menu>
+                    <menuitem label="Contenido">
+                        <menu>
+                            <menuitem label="INTRODUCCIÓN" data-page="slide1"></menuitem>
+                            <menuitem label="SIETE PASOS DEL PROCESO DE PLANEAMIENTO CONJUNTO" data-page="slide2"></menuitem>
+                        </menu>
+                    </menuitem>
+                    <menuitem label="Navegación" data-page="pag-navegacion"></menuitem>
+                    <menuitem label="Visto" data-global-id="results"></menuitem>
+                    <menuitem label="Glosario" data-global-id="library"></menuitem>
+                    <menuitem label="Bibliografía" data-global-id="credits"></menuitem>
+                </menu>
+            </nav>
+            <h2 class="page-title"></h2>
+        </header>
+
+        <main style="display: none;">
+
+            <!-- slide 1 -->
+            <section id="slide1" ptitle="Introducción">
+                <div class="subpage">
+                    <h2>Introducción</h2>
+                    <div class="vertical-menu-both-sides">
+                        <left>
+                            <dl>
+                                <dt>
+                                    <div class="medio" title="Contenido"></div>
+                                </dt>
+                                <dd>
+                                    <div class="instruction"><strong>INSTRUCCIÓN:</strong> Haz clic en el botón ver mas, después haz clic en la pantalla video para ver los videos de introducción, luego reproduzca el audio que se encuentra en la parte inferior. </div>
+                                    <button class="w-content-controler general" data-content="#s1">
+                                        VER MAS
+                                    </button>
+                                    <div class="videobox">
+                                        <a href="https://youtu.be/nEVUP4ZF7us" class="fresco" data-fresco-group="s1"><img src="content/slide1/prev.png" class="prev" /></a>
+                                    </div>
+                                    <sup class="tooltip button" data-position-my="left bottom" title='
+                                        <div class="about">
+                                            <audio controls>
+                                                <source src="content/slide1/sounds/u3s1.mp3" type="audio/mp3">
+                                                Su navegador no soporta el componente de audio
+                                            </audio>
+                                        </div>'><div class="audio-icon"></div>Audio
+                                    </sup>
+                                </dd>
+                            </dl>
+                            <div id="s1" class="w-content" data-property-width="70vw">
+                                <p>El proceso de planeamiento conjunto se lleva a cabo cuando, la acción militar de una fuerza de un país en su interior se encuentra desarrollando diferentes operaciones diferentes a la guerra. También se desarrollará si una fuerza militar está llevando a cabo un conflicto armado no internacional en su territorio. Y por supuesto, será el proceso de planeamiento que se llevará acabo ante una guerra convencional. El impacto que pretende causar este módulo en las fuerzas militares de Colombia es capacitar a sus oficiales en el desarrollo del proceso y estar preparados para hacerlo exitosamente en el futuro. Esto permitirá que las unidades conjuntas de las fuerzas militares puedan llevar a cabo operaciones exitosas en todos los contextos necesarios tanto interno como externo cuando ello sea necesario. Los invitamos a sumergirse en este fascinante proceso el cual debe ser de amplio conocimiento para todo el personal militar.</p>
+                                <p></p>
+                            </div>
+                        </left>
+                    </div>
+                </div>
+            </section>
+
+            <!-- slide 2 -->
+            <section id="slide2" ptitle="SIETE PASOS DEL PROCESO DE PLANEAMIENTO CONJUNTO">
+                <div class="subpage">
+                    <h2>SIETE PASOS DEL PROCESO DE PLANEAMIENTO CONJUNTO</h2>
+                    <div class="vertical-menu-both-sides">
+                        <left>
+                            <dl>
+                                <dt>
+                                    <div class="medio" title="Contenido"></div>
+                                </dt>
+                                <dd>
+                                    <div class="ctrl-pagination" data-orientation="sides">
+                                        <li>
+                                            <div class="instruction"><strong>INSTRUCCIÓN:</strong> Haz clic en la pantalla de video y observa los 2 videos sobre el PPC. En pantalla en la parte superior, va a encontrar un menú con 7 temas relacionados. Haz clic en cada uno de los temas para profundizar cada área.</div>
+                                            <div class="videobox">
+                                                <a href="https://youtu.be/TbgJSCKw8b0" class="fresco" data-fresco-group="s2"><img src="content/slide2/prev.png" class="prev" /></a>
+                                                <a href="https://youtu.be/2Qo2jnxE2iA" class="fresco" data-fresco-group="s2"></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="ppc">
+                                                <button class="w-content-controler to-slide3" data-content="#slide3"></button>
+                                                <button class="w-content-controler to-slide4" data-content="#slide4"></button>
+                                                <button class="w-content-controler to-slide5" data-content="#slide5"></button>
+                                                <button class="w-content-controler to-slide6" data-content="#slide6"></button>
+                                                <button class="w-content-controler to-slide7" data-content="#slide7"></button>
+                                                <button class="w-content-controler to-slide8" data-content="#slide8"></button>
+                                                <button class="w-content-controler to-slide9" data-content="#slide9"></button>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </dd>
+                            </dl>
+
+                            <!-- slide 3 -->
+                            <div id="slide3" class="w-content" data-property-width="70vw">
+                                <h2>SIETE PASOS DEL PROCESO DE PLANEAMIENTO CONJUNTO</h2>
+                                <h3>Iniciación del planeamiento</h3>
+                                <div class="ctrl-pagination" data-orientation="sides">
+                                    <li>
+                                        <div class="instruction"><strong>INSTRUCCIÓN:</strong> Haz clic en la pantalla de video y observa el video sobre el Ambiente Operacional, después, haz clic en el botón ver más Continúa revisando todo Continúa revisando la información en las siguientes pantallas. </div>
+                                        <div class="videobox">
+                                            <a href="https://youtu.be/zdSZwRhqOBg" class="fresco"><img src="content/slide3/prev.png" class="prev" /></a>
+                                        </div>
+                                        <button class="w-content-controler general" data-content="#s3-1">
+                                            VER MAS
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <div class="instruction"><strong>INSTRUCCIÓN:</strong> Reproduce el audio y haz clic en la pantalla de fotos para observar las diferentes fotos relacionadas con el tema.</div>
+                                        <sup class="tooltip button" title='
+                                            <div class="about">
+                                                <audio controls>
+                                                    <source src="content/slide3/sounds/u3s3-3.mp3" type="audio/mp3">
+                                                    Su navegador no soporta el componente de audio
+                                                </audio>
+                                            </div>'><div class="audio-icon"></div>Audio
+                                        </sup>
+                                        <div class="videobox">
+                                            <a href="content/slide3/imagen_1.jpg" class="fresco" data-fresco-group="s3-2"><img src="content/slide3/imagen_1.jpg" class="prev" /></a>
+                                            <a href="content/slide3/imagen_2.jpg" class="fresco" data-fresco-group="s3-2"></a>
+                                            <a href="content/slide3/imagen_3.jpg" class="fresco" data-fresco-group="s3-2"></a>
+                                            <a href="content/slide3/imagen_4.jpg" class="fresco" data-fresco-group="s3-2"></a>
+                                            <a href="content/slide3/imagen_5.jpg" class="fresco" data-fresco-group="s3-2"></a>
+                                            <a href="content/slide3/imagen_6.jpg" class="fresco" data-fresco-group="s3-2"></a>
+                                            <a href="content/slide3/imagen_7.jpg" class="fresco" data-fresco-group="s3-2"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>¿Recuerda el análisis del problema? En el inicio del planeamiento debemos recordar que se debe iniciar analizar el problema de una forma muy profesional y consciente, pues en su análisis recibirá la capacidad de solución que podamos hallar comunidad conjunta.</p>
+                                        <div class="videobox">
+                                            <a href="content/slide3/s3g1.jpg" class="fresco" data-fresco-caption="Análisis del problema"><img src="content/slide3/s3g1.jpg" class="prev" /></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="instruction"><strong>INSTRUCCIÓN:</strong> Haz clic en la pantalla de gráficos para observar las diferentes fotos relacionadas con el tema.</div>
+                                        <div class="videobox">
+                                            <a href="content/slide3/s3.jpg" class="fresco" data-fresco-group="s3-4"><img src="content/slide3/s3.jpg" class="prev" /></a>
+                                            <a href="content/slide3/s3g3.jpg" class="fresco" data-fresco-group="s3-4"></a>
+                                            <a href="content/slide3/s3g4.jpg" class="fresco" data-fresco-group="s3-4"></a>
+                                            <a href="content/slide3/s3g5.jpg" class="fresco" data-fresco-group="s3-4"></a>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                            <div id="s3-1" class="w-content" data-property-width="70vw">
+                                <p>
+                                    Recordemos un poco la definición de planes de contingencia para tener un poco más claro ante cuales situaciones puede darse la orden a una unidad conjunta de iniciar un proceso de planeamiento conjunto: 
+                                </p>
+                                <p>
+                                    <strong>Contingencia:</strong> Es una situación que requiere operaciones militares en respuesta a desastres naturales, terroristas, subversivos o como lo indique la autoridad apropiada para proteger los intereses del Estado. <strong>Plan de contingencia:</strong> Es una rama de un plan de campaña que se planifica en base a situaciones hipotéticas para amenazas designadas, eventos catastróficos y misiones contingentes fuera de las condiciones de crisis. 
+                                </p>
+                                <p>
+                                    La planificación de una contingencia permite desarrollar comprensión, así como la experiencia analítica y de planificación que puede ser útil durante una crisis. 
+
+                                </p>
+                            </div>
+
+                            <!-- slide 4 -->
+                            <div id="slide4" class="w-content" data-property-width="70vw">
+                                <h2>SIETE PASOS DEL PROCESO DE PLANEAMIENTO CONJUNTO</h2>
+                                <h3>Análisis de la misión</h3>
+                                <div class="ctrl-pagination" data-orientation="sides">
+                                    <li>
+                                        <div class="instruction"><strong>INSTRUCCIÓN:</strong> Haz clic en el botón <strong>pregunta</strong>, después, haz clic sobre los títulos “Datos Clave, Resultados Calve y Análisis de Misión para conocer un poco más sobre estos términos”. Continúa revisando la información en las siguientes pantallas.</div>
+                                        <button class="w-content-controler general" data-content="#s4-1">
+                                            PREGUNTA
+                                        </button>
+                                        <div class="s4-1"><!-- 
+                                            <div class="centro"></div>
+                                            <div class="izq uno"></div>
+                                            <div class="izq dos"></div>
+                                            <div class="izq tres"></div>
+                                            <div class="izq cuatro"></div>
+                                            <div class="der cinco"></div>
+                                            <div class="der seis"></div>
+                                            <div class="der siete"></div>
+                                            <div class="der ocho"></div>
+                                            <div class="der nueve"></div> -->
+
+                                            <div class="tooltip datos" data-position-my="left bottom" title="Aquí podemos apreciar que los elementos que necesitamos para analizar la misión son la dirección estratégica, la guía del planeamiento inicial del comandante de la unidad superior y del comandante de nuestra unidad conjunta, la apreciación estratégica y los productos de inteligencia que se tienen determinados para el PICAO."></div>
+                                            <div class="tooltip analisis" title='
+                                                <div class="about">
+                                                    <audio controls>
+                                                        <source src="content/slide4/sounds/u3s4a.mp3" type="audio/mp3">
+                                                        Su navegador no soporta el componente de audio
+                                                    </audio>
+                                                </div>
+                                            '></div>
+                                            <div class="tooltip resultados" data-position-my="left bottom" title="Los productos de salida después de terminar el análisis de la misión serán: las apreciaciones de Estado Mayor refinadas, irrenunciable la misión de nuestra unidad conjunta, la guía de planeamiento del comandante mejorada o refinada, los requerimientos de información crítica inicial del comandante. Esto se ve aparentemente sencillo, pero recuerde que el análisis superficial ya se hizo en el diseño operacional. En este paso debemos hacerlo con profundidad y para ello el Estado Mayor se apoya principalmente en su personal de inteligencia para el desarrollo de este paso."></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="instruction"><strong>INSTRUCCIÓN:</strong> Reproduzca el audio, después, haz clic en los términos resaltados para conocer más sobre cada tema.</div>
+                                        <sup class="tooltip button" title='
+                                            <div class="about">
+                                                <audio controls>
+                                                    <source src="content/slide4/sounds/u3s4-2.mp3" type="audio/mp3">
+                                                    Su navegador no soporta el componente de audio
+                                                </audio>
+                                            </div>'><div class="audio-icon"></div>Audio
+                                        </sup>
+                                        <h3>Actividades Análisis de la Misión</h3>
+                                        <ol>
+                                            <li>Comience con análisis de la <span class="tooltip" data-position-at="top" title='
+                                                <div class="about">
+                                                    <audio controls>
+                                                        <source src="content/slide4/sounds/s4-2-1.mp3" type="audio/mp3">
+                                                        Su navegador no soporta el componente de audio
+                                                    </audio>
+                                                </div>'>soportabilidad logística</span>.</li>
+                                            <li>Analizar <span class="tooltip" data-position-at="top" title='
+                                                <div class="about">
+                                                    <audio controls>
+                                                        <source src="content/slide4/sounds/s4-2-2.mp3" type="audio/mp3">
+                                                        Su navegador no soporta el componente de audio
+                                                    </audio>
+                                                </div>'>guía estratégica</span> y actividades de planeamiento del comando superior.</li>
+                                            <li>Revisar la <span class="tooltip" data-position-at="top" title='
+                                                <div class="about">
+                                                    <audio controls>
+                                                        <source src="content/slide4/sounds/s4-2-3.mp3" type="audio/mp3">
+                                                        Su navegador no soporta el componente de audio
+                                                    </audio>
+                                                </div>'>guía inicial de planeamiento</span> del comandante, incluyendo el <span class="tooltip" data-position-at="top" title='
+                                                <div class="about">
+                                                    <audio controls>
+                                                        <source src="content/slide4/sounds/s4-2-3.mp3" type="audio/mp3">
+                                                        Su navegador no soporta el componente de audio
+                                                    </audio>
+                                                </div>'>entendimiento del ambiente operacional</span>, entendimiento del <span class="tooltip" data-position-at="top" title='
+                                                <div class="about">
+                                                    <audio controls>
+                                                        <source src="content/slide4/sounds/s4-2-3.mp3" type="audio/mp3">
+                                                        Su navegador no soporta el componente de audio
+                                                    </audio>
+                                                </div>'>problema</span> y descripción de la aproximación operacional.</li>
+                                            <li>Determine <span class="tooltip" data-position-at="top" title='
+                                                <div class="about">
+                                                    <audio controls>
+                                                        <source src="content/slide4/sounds/s4-2-4.mp3" type="audio/mp3">
+                                                        Su navegador no soporta el componente de audio
+                                                    </audio>
+                                                </div>'>hechos</span> confirmados y desarrollar <span class="tooltip" data-position-at="top" title='
+                                                <div class="about">
+                                                    <audio controls>
+                                                        <source src="content/slide4/sounds/s4-2-4.mp3" type="audio/mp3">
+                                                        Su navegador no soporta el componente de audio
+                                                    </audio>
+                                                </div>'>asunciones</span> para el planeamiento.</li>
+                                            <li>Determine y analice <span class="tooltip" data-position-at="top" title='
+                                                <a href="https://youtu.be/7TAWGr5wq10" class="fresco"><img src="content/slide4/prev.png" class="prev" /></a>
+                                                '>limitaciones operacionales</span>.</li>
+                                            <li>Determine <span class="tooltip" data-position-at="top" title='
+                                                <a href="https://youtu.be/XXKMiEuSPgs" class="fresco"><img src="content/slide4/prev2.png" class="prev" /></a>
+                                                '>tareas</span>, especificas, implícitas y esenciales.</li>
+                                            <li>Desarrolle el <span class="tooltip" data-position-at="top" title='
+                                                <a href="https://youtu.be/JOKgylqHzyA" class="fresco"><img src="content/slide4/prev3.png" class="prev" /></a>
+                                                '>enunciado de la misión</span>.</li>
+                                            <li>Conducir identificación de <span class="tooltip" data-position-at="top" title='
+                                                <a href="https://youtu.be/wXC0VcDjWwY" class="fresco"><img src="content/slide4/prev4.png" class="prev" /></a>
+                                                '>tropas iniciales</span>.</li>
+                                            <li>Desarrollar la <span class="tooltip" data-position-at="top" title='
+                                                <a href="https://youtu.be/714AVhIyhVw" class="fresco"><img src="content/slide4/prev5.png" class="prev" /></a>
+                                                '>evaluación del riesgo</span>.</li>
+                                            <li>Desarrolle <span class="tooltip" data-position-at="top" title="Haz clic"><a href="https://youtu.be/dXeqyKxgnyM" class="fresco" data-fresco-group="s4-2-exito">criterio de éxito</a></span> en la misión.</li>
+
+                                            <li>Desarrollar los <span class="tooltip" data-position-at="top" title='
+                                                <a href="https://youtu.be/HHlLjKLgKR0" class="fresco"><img src="content/slide4/prev7.png" class="prev" /></a>
+                                                '>RICCs</span></li>
+                                            <li>Preparar <span class="tooltip" data-position-at="top" title='
+                                                <a href="https://youtu.be/xRpRIEh4-es" class="fresco"><img src="content/slide4/prev8.png" class="prev" /></a>
+                                                '>apreciaciones</span></li>
+                                            <li>Preparar y presentar el <span class="tooltip" data-position-at="top" title='
+                                                <a href="https://youtu.be/aROGiK-ZIeI" class="fresco"><img src="content/slide4/prev9.png" class="prev" /></a>
+                                                '><i>Briiefing</i> de Análisis de la Misión</span>.</li>
+
+                                            <li>Publicar <span class="tooltip" data-position-at="top" title="Haz clic"><a href="content/slide4/s4g17-1-100.jpg" class="fresco" data-fresco-group="s4-2-rubrica">Guía de Planeamiento Inicial del Comandante Actualizada</a></span>, enunciado de la Intención y Aproximación Operacional Refinada.</li>
+
+                                        </ol>
+                                        <div style="display: none">
+                                            <a href="https://youtu.be/pxQfUgDF4VQ" class="fresco" data-fresco-group="s4-2-exito"></a>
+                                            <a href="https://youtu.be/zLbQfAO-CPY" class="fresco" data-fresco-group="s4-2-exito"></a>
+
+                                            <a href="content/slide4/s4g17-2-100.jpg" class="fresco" data-fresco-group="s4-2-rubrica"></a>
+                                            <a href="content/slide4/s4g17-3-100.jpg" class="fresco" data-fresco-group="s4-2-rubrica"></a>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                            <div id="s4-1" class="w-content" data-property-width="70vw">
+                                <p>¿Qué debemos tener al final del paso uno? Simplemente los productos del diseño operacional. Estos ya los estudiamos en el módulo dos con profundidad. Como usted ya sabe a profundidad, la forma de hacer el diseño operacional podemos continuar a estudiar el paso dos del proceso de planeamiento conjunto: análisis de la misión.</p>
+                                <p>En cada uno de los pasos del proceso de planeamiento conjunto veremos una imagen similar a ésta en la que tendremos unos elementos de entrada y unos productos de salida del paso. Esto nos permitirá tener un mejor entendimiento de los mismos y seguido de una forma más metódica lo que debemos hacer en cada uno de ellos. El análisis de la misión se refiere a precisamente eso, tomaremos la misión que se nos ha encomendado y la vamos a analizar. Parece redundante decir esto pero en realidad es necesario ya que muchos planeadores militares no entienden su concepto básico. Al analizar la misión que se nos está dando vamos a analizar todos los factores que tienen relación a ella con el fin de que podamos hallar la solución más adecuada para su ejecución.</p>
+                                <p>Recuerde que el PICAO proceso de inteligencia conjunto del ambiente operacional se desarrolla en este paso, el cual es realizado por la sección de inteligencia con gran profundidad. Este proceso por su importancia y profundidad lo explicaremos en el módulo cuatro con mayor detalle.</p>
+                            </div>
+
+                            <!-- slide 5 -->
+                            <div id="slide5" class="w-content" data-property-width="70vw">
+                                <h2>SIETE PASOS DEL PROCESO DE PLANEAMIENTO CONJUNTO</h2>
+                                <h3>Desarrollo de los cursos de acción</h3>
+                                <div class="ctrl-pagination" data-orientation="sides">
+                                    <li class="li">
+                                        <div class="instruction"><strong>INSTRUCCIÓN:</strong> Haz clic en el botón ver más, después, haz clic sobre los títulos “Datos Clave y Resultados Calve para conocer un poco más sobre estos términos”. Continúa revisando la información en las siguientes pantallas.</div>
+                                        <button class="w-content-controler general" data-content="#s5-1">
+                                            VER MAS
+                                        </button>
+                                        <div class="s5-1">
+
+                                            <div class="tooltip datos" data-position-my="left bottom" title="Podemos ver que como elementos de entrada tenemos las apreciaciones del Estado Mayor, que ya deben haber sido mejoradas, el nuevo enunciado de la misión, el nuevo enfoque operacional mejorado en la nueva guía de planeamiento del comandante y los requerimientos de información crítica del comandante."></div>
+                                            <div class="analisis"></div>
+                                            <div class="tooltip resultados" data-position-my="left bottom" title="Después del desarrollo de este paso tendremos como productos las apreciaciones nuevamente actualizadas y mejoradas, el desarrollo de alternativas de cursos de acción con narrativa y gráficos en los que estarán los puntos necesarios mínimos para un curso de acción, matrices de sincronización, evaluación del riesgo con su identificación y unos criterios devaluación establecidos para analizar los cursos de acción. Este paso básicamente se refiere al proceso de pensamiento en el que el Estado Mayor empieza a conseguir la manera en que la unidad conjunta va a desarrollar la misión. De otro modo, podemos decirlo como la solución al problema que hemos venido analizando en todos los pasos anteriores. Todo el análisis profundo y robusto que hemos llevado hasta el momento ha sido con el fin de llegar a este paso y desarrollar un curso de acción adecuado que nos brinde la solución que esperamos al problema que nos estamos enfrentando."></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="videobox">
+                                            <a href="https://youtu.be/88Dmh5g096E" class="fresco"><img src="content/slide5/prev.png" class="prev" /></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="instruction"><strong>INSTRUCCIÓN:</strong> Reproduzca el audio.</div>
+                                        <sup class="tooltip button" title='
+                                            <div class="about">
+                                                <audio controls>
+                                                    <source src="content/slide5/sounds/u3s5-3.mp3" type="audio/mp3">
+                                                    Su navegador no soporta el componente de audio
+                                                </audio>
+                                            </div>'><div class="audio-icon"></div>Audio
+                                        </sup>
+                                        <div class="box_media">
+                                            <img src="content/slide5/s5h3.jpg" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="instruction"><strong>INSTRUCCIÓN:</strong> Lea y analice la información sobre el paso del desarrollo de los cursos de acción.</div>
+                                        <p>Aquí podemos ver el listado de acciones para desarrollar en el paso del desarrollo de los cursos de acción.</p>
+                                        <ol>
+                                            <li>Determinar cuánta fuerza se necesitará en el teatro de operaciones al final de la operación o campaña, qué estarán haciendo esas fuerzas y cómo se posicionarán esas fuerzas geográficamente. Usar el análisis “unidad a tarea”, que consiste en determinar la tarea claramente de cada unidad que se vaya considerando en el curso de acción. Trazar un esquema para ayudar a visualizar las fuerzas y sus posiciones.</li>
+                                            <li>Observar el bosquejo y trabajar en orden inverso, determinar la mejor forma de llevar las fuerzas posicionadas en el Paso 1 desde sus últimas localizaciones al final de la operación o campaña a una base en territorio amigo. Esto ayudará a formular el plan de establecimiento de bases deseado.</li>
+                                            <li>Utilizar el enunciado de la misión como una guía, determinar las tareas que la fuerza debe cumplir en camino a sus posiciones/localizaciones al final de la operación o campaña. Trazar un bosquejo del plan de maniobra. Asegurarse de que la fuerza realice todo lo que el nivel estratégico haya ordenado al comandante.</li>
+                                            <li>Determinar el plan de despliegue, es decir, el establecimiento de bases requerido para posicionar la fuerza en territorio amigo y las tareas que la fuerza debe cumplir para llegar a esas bases. Trazar un bosquejo de esto como parte de dicho plan.</li>
+                                            <li>Determinar si la fuerza planificada es suficiente para cumplir todas tareas que el nivel estratégico o la unidad superior le ha indicado a la unidad superior.</li>
+                                            <li>Dadas las tareas a desempeñar, determinar en qué orden se deben desplegar las fuerzas en el teatro de operaciones. Considerar las categorías de la fuerza como maniobra, protección, sostenimiento, o de configuración del teatro de operaciones.</li>
+                                            <li>La información desarrollada ahora debe permitir la determinación del empleo de la fuerza, las tareas más importantes y su orden de sucesión, sostenimiento y relaciones de mando.</li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <div class="instruction"><strong>INSTRUCCIÓN:</strong> Haz clic en la pantalla de video y observa los videos sobre Logística en el Planeamiento, Concepto de Apoyo Logístico, Planificación de Fuerzas, entre otros.</div>
+                                        <div class="videobox">
+                                            <a href="https://youtu.be/RFN8f_t1m8c" class="fresco" data-fresco-group="s5-5"><img src="content/slide5/prev2.png" class="prev" /></a>
+                                            <a href="https://youtu.be/4wFwCOCM7QA" class="fresco" data-fresco-group="s5-5"></a>
+                                            <a href="https://youtu.be/9MpECdS3pwU" class="fresco" data-fresco-group="s5-5"></a>
+                                            <a href="https://youtu.be/9vjTB-Bx2OQ" class="fresco" data-fresco-group="s5-5"></a>
+                                            <a href="https://youtu.be/HZzcW0s9Tcc" class="fresco" data-fresco-group="s5-5"></a>
+                                            <a href="https://youtu.be/F35EtPLhwuM" class="fresco" data-fresco-group="s5-5"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="instruction"><strong>INSTRUCCIÓN:</strong> Reproduzca el audio, después, haz clic en la pantalla del gráfico para ver los diferentes Ejemplos de Diseño Operacional.</div>
+                                        <sup class="tooltip button" title='
+                                            <div class="about">
+                                                <audio controls>
+                                                    <source src="content/slide5/sounds/u3s5-6.mp3" type="audio/mp3">
+                                                    Su navegador no soporta el componente de audio
+                                                </audio>
+                                            </div>'><div class="audio-icon"></div>Audio
+                                        </sup>
+                                        <div class="videobox">
+                                            <a href="content/slide5/s5h11g1.jpg" class="fresco" data-fresco-group="s5-6"><img src="content/slide5/s5h11g1.jpg" class="prev" /></a>
+                                            <a href="content/slide5/s5h11g2.jpg" class="fresco" data-fresco-group="s5-6"></a>
+                                            <a href="content/slide5/s5h11g3.jpg" class="fresco" data-fresco-group="s5-6"></a>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                            <div id="s5-1" class="w-content" data-property-width="70vw">
+                                <p>Ahora que aprendimos la forma de desarrollar el paso número dos, análisis de la misión, veremos qué hacer en el paso número tres, desarrollo de los cursos de acción.</p>
+                                <p>Aquí podemos observar cuáles son los elementos de entrada y los productos de salida en el desarrollo de los cursos de acción.</p>
+                                <p>Recuerde que todo lo analizado hasta el momento debe ser tenido en cuenta y puesto en práctica en esta estructuración de cursos de acción, de lo contrario las acciones anteriores serían en vano. Existe una tendencia entre los planeadores militares a desarrollar los cursos de acción olvidándose de la información obtenida en los pasos anteriores y empiezan a desarrollar los esquemas para la maniobra de la unidad conjunta basándose más en percepciones personales que me han sido desarrolladas apropiadamente. Ahora, recordemos que el arte operacional nos permite como militares manejar un nivel apropiado de intuición, experiencia, percepción, juicio y análisis, pero este debe ser basado en el estudio que hemos realizado. Si se desprecia totalmente lo realizado en los pasos anteriores no estaremos aplicando arte operacional, sino que estaremos cayendo en prejuicios y en apreciaciones vacías.</p>
+                            </div>
+
+                            <!-- slide6 -->
+                            <div id="slide6" class="w-content" data-property-width="70vw">
+                                <h2>SIETE PASOS DEL PROCESO DE PLANEAMIENTO CONJUNTO</h2>
+                                <h3>Análisis del los cursos de acción</h3>
+                                <div class="instruction"><strong>INSTRUCCIÓN:</strong> Haz clic en el botón ver más, después  haz clic en la pantalla de video y observa el video sobre Análisis del Curso de Acción, para finalizar reproduzca el audio sobre Juego de Guerra y Juego de Guerra electrónicos</div>
+                                <div style="display: flex;">
+                                    <button class="w-content-controler general" data-content="#s6-1">
+                                        VER MAS
+                                    </button>
+                                    <sup class="tooltip button" data-position-my="left bottom" title='
+                                        <div class="about">
+                                            <audio controls>
+                                                <source src="content/slide6/sounds/s6.mp3" type="audio/mp3">
+                                                Su navegador no soporta el componente de audio
+                                            </audio>
+                                        </div>'><div class="audio-icon"></div>Audio
+                                    </sup>
+                                </div>
+                                <div class="videobox">
+                                    <a href="https://youtu.be/632flhMCK9s" class="fresco"><img src="content/slide6/prev.png" class="prev" /></a>
+                                </div>
+                            </div>
+                            <div id="s6-1" class="w-content" data-property-width="70vw">
+                                <p>Ahora pasaremos al paso cuatro del proceso de planeamiento conjunto, el análisis de los cursos de acción.</p>
+                                <p>Podemos observar que los elementos insumo para el análisis de los cursos de acción son los productos derivados del paso tres de desarrollo de los cursos de acción. Como productos resultados o salientes del análisis de los cursos de acción tendremos la determinación de puntos de decisión, operaciones derivadas y subsecuentes, los cursos de acción perfeccionados, apreciaciones de Estado Mayor nuevamente mejoradas y profesionales y matrices de sincronización igualmente perfeccionadas. En este paso el comandante y el Estado mayor realizarán el juego de guerra el cual explicaremos independientemente en el módulo cuatro con el fin de hacer una explicación más profunda del mismo.</p>
+                            </div>
+
+                            <!-- slide7 -->
+                            <div id="slide7" class="w-content" data-property-width="70vw">
+                                <h2>SIETE PASOS DEL PROCESO DE PLANEAMIENTO CONJUNTO</h2>
+                                <h3>Comparación de los cursos de acción</h3>
+                                <div class="ctrl-pagination" data-orientation="sides">
+                                    <li>
+                                        <div class="instruction"><strong>INSTRUCCIÓN:</strong> Haz clic en el botón ver más y analiza el gráfico presentado sobre comparación de los Cursos de Acción. Continúa revisando la información en las siguientes pantallas.</div>
+                                        <button class="w-content-controler general" data-content="#s7-1">
+                                            VER MAS
+                                        </button>
+                                        <div class="videobox">
+                                            <a href="content/slide7/s7-1.png" class="fresco"><img src="content/slide7/s7-1.png" class="prev" /></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="instruction"><strong>INSTRUCCIÓN:</strong> Haz clic en el botón ver más y analiza el gráfico presentado sobre comparación de los Cursos de Acción.</div>
+                                        <div class="videobox">
+                                            <a href="https://youtu.be/zD_TYaCtg5g" class="fresco" data-fresco-group="s7-2"><img src="content/slide7/prev.png" class="prev" /></a>
+                                            <a href="https://youtu.be/euGJDHJzNaM" class="fresco" data-fresco-group="s7-2"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <sup class="tooltip button" title='
+                                            <div class="about">
+                                                <audio controls>
+                                                    <source src="content/slide7/sounds/u3s7.mp3" type="audio/mp3">
+                                                    Su navegador no soporta el componente de audio
+                                                </audio>
+                                            </div>'><div class="audio-icon"></div>Audio
+                                        </sup>
+                                        <div class="videobox">
+                                            <a href="content/slide7/s7g5.png" class="fresco"><img src="content/slide7/s7g5.png" class="prev" /></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="instruction"><strong>INSTRUCCIÓN:</strong> Reproduce el audio y analiza el gráfico presentado sobre comparación de los Cursos de Acción.</div>
+                                        <sup class="tooltip button" title='
+                                            <div class="about">
+                                                <audio controls>
+                                                    <source src="content/slide7/sounds/u3s7-4.mp3" type="audio/mp3">
+                                                    Su navegador no soporta el componente de audio
+                                                </audio>
+                                            </div>'><div class="audio-icon"></div>Audio
+                                        </sup>
+                                        <div class="videobox">
+                                            <a href="content/slide7/s7g6.jpg" class="fresco"><img src="content/slide7/s7g6.jpg" class="prev" /></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="instruction"><strong>INSTRUCCIÓN:</strong> Reproduce el audio y analiza el gráfico presentado sobre comparación de los Cursos de Acción.</div>
+                                        <sup class="tooltip button" title='
+                                            <div class="about">
+                                                <audio controls>
+                                                    <source src="content/slide7/sounds/u3s7-5.mp3" type="audio/mp3">
+                                                    Su navegador no soporta el componente de audio
+                                                </audio>
+                                            </div>'><div class="audio-icon"></div>Audio
+                                        </sup>
+                                        <div class="videobox">
+                                            <a href="content/slide7/s7g7.jpg" class="fresco"><img src="content/slide7/s7g7.jpg" class="prev" /></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="instruction"><strong>INSTRUCCIÓN:</strong> Reproduce el audio y analiza el gráfico presentado sobre comparación de los Cursos de Acción.</div>
+                                        <sup class="tooltip button" title='
+                                            <div class="about">
+                                                <audio controls>
+                                                    <source src="content/slide7/sounds/u3s7-6.mp3" type="audio/mp3">
+                                                    Su navegador no soporta el componente de audio
+                                                </audio>
+                                            </div>'><div class="audio-icon"></div>Audio
+                                        </sup>
+                                        <div class="videobox">
+                                            <a href="content/slide7/s7g8.jpg" class="fresco"><img src="content/slide7/s7g8.jpg" class="prev" /></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="instruction"><strong>INSTRUCCIÓN:</strong> Reproduce el audio y analiza el gráfico presentado sobre comparación de los Cursos de Acción.</div>
+                                        <sup class="tooltip button" title='
+                                            <div class="about">
+                                                <audio controls>
+                                                    <source src="content/slide7/sounds/u3s7-7.mp3" type="audio/mp3">
+                                                    Su navegador no soporta el componente de audio
+                                                </audio>
+                                            </div>'><div class="audio-icon"></div>Audio
+                                        </sup>
+                                        <div class="videobox">
+                                            <a href="content/slide7/s7g9.jpg" class="fresco"><img src="content/slide7/s7g9.jpg" class="prev" /></a>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                            <div id="s7-1" class="w-content" data-property-width="70vw">
+                                <p>Ahora abordaremos el paso número cinco la comparación de los cursos de acción.</p>
+                                <p>La comparación de COA facilita el proceso de toma de decisiones del comandante al equilibrar los fines, los medios, las formas y el riesgo de cada COA. El producto final de esta tarea es un <i>briefing</i> para el comandante sobre una recomendación de COA y una decisión del comandante. La comparación de COA ayuda al comandante a responder las siguientes preguntas:</p>
+                                <ul class="data_list">
+                                    <li>¿Cuáles son las diferencias entre cada COA?</li>
+                                    <li>¿Cuáles son las ventajas y desventajas?</li>
+                                    <li>¿Cuáles son los riesgos?</li>
+                                </ul>
+                                <p>Identifique y seleccione el COA que mejor cumpla con la misión. En la comparación de COA, el comandante y el personal evalúan todos los COA amistosos contra los criterios de evaluación establecidos y seleccionan el COA que mejor cumple la misión. El comandante revisa la lista de criterios y agrega o elimina según lo considere conveniente. El número de criterios de evaluación variará, pero debería ser suficiente para diferenciar los COA. En consecuencia, los COA no se comparan entre sí, sino que se evalúan individualmente según los criterios establecidos por el personal y el comandante. Las matrices de decisión por sí solas no pueden proporcionar soluciones de decisión. Su mayor valor es proporcionar un método para comparar curso de acción contra criterios que, cuando se cumplen, producen el éxito de la misión. Son herramientas analíticas que los funcionarios utilizan para preparar recomendaciones. Los comandantes brindan la solución aplicando su criterio a las recomendaciones del personal y tomando una decisión.</p>
+                            </div>
+
+                            <!-- slide8 -->
+                            <div id="slide8" class="w-content" data-property-width="70vw">
+                                <h2>SIETE PASOS DEL PROCESO DE PLANEAMIENTO CONJUNTO</h2>
+                                <h3>Aprobación de los cursos de acción</h3>
+                                <div class="ctrl-pagination" data-orientation="sides">
+                                    <li>
+                                        <div class="instruction"><strong>INSTRUCCIÓN:</strong> Haz clic en el botón ver más y analiza el gráfico presentado sobre Aprobación del Curso en Acción. Continúa revisando la información en las siguientes pantallas.</div>
+                                        <button class="w-content-controler general" data-content="#s8-1">
+                                            VER MAS
+                                        </button>
+                                        <div class="videobox">
+                                            <a href="content/slide8/s8.jpg" class="fresco"><img src="content/slide8/s8.jpg" class="prev" /></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="instruction"><strong>INSTRUCCIÓN:</strong> Reproduzca el audio, después haz clic en la pantalla del gráfico para ver todas las tablas relacionadas al Briefng.</div>
+                                        <sup class="tooltip button" title='
+                                            <div class="about">
+                                                <audio controls>
+                                                    <source src="content/slide8/sounds/u3s8-2.mp3" type="audio/mp3">
+                                                    Su navegador no soporta el componente de audio
+                                                </audio>
+                                            </div>'><div class="audio-icon"></div>Audio
+                                        </sup>
+                                        <div class="videobox">
+                                            <a href="content/slide8/s8g11-1.jpg" class="fresco" data-fresco-group="s8"><img src="content/slide8/s8g11-1.jpg" class="prev" /></a>
+                                            <a href="content/slide8/s8g11-2.jpg" class="fresco" data-fresco-group="s8"></a>
+                                            <a href="content/slide8/s8g11-3.jpg" class="fresco" data-fresco-group="s8"></a>
+                                            <a href="content/slide8/s8g11-4.jpg" class="fresco" data-fresco-group="s8"></a>
+                                            <a href="content/slide8/s8g11-5.jpg" class="fresco" data-fresco-group="s8"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="instruction"><strong>INSTRUCCIÓN:</strong> Reproduzca el audio y revise la imagen referente a Decisión del Comandante.</div>
+                                        <sup class="tooltip button" title='
+                                            <div class="about">
+                                                <audio controls>
+                                                    <source src="content/slide8/sounds/u3s8-3.mp3" type="audio/mp3">
+                                                    Su navegador no soporta el componente de audio
+                                                </audio>
+                                            </div>'><div class="audio-icon"></div>Audio
+                                        </sup>
+                                        <div class="videobox">
+                                            <a href="content/slide8/s8-3.png" class="fresco"><img src="content/slide8/s8-3.png" class="prev" /></a>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                            <div id="s8-1" class="w-content" data-property-width="70vw">
+                                <p>Ahora pasamos al paso número seis del proceso de planeamiento conjunto aprobación de los cursos de acción.</p>
+                                <p>Podemos ver que en la aprobación de los cursos de acción los elementos de entrada o insumos son los cursos de acción perfeccionados, recomendaciones del Estado mayor respecto a los mismos, y un análisis personal de experiencia y opinión que fundamenta el arte operacional del comandante de la unidad conjunta y de cada uno de los miembros del Estado Mayor.  Los productos finales o resultados clave que tendremos al final del paso serán las modificaciones respectivas para los cursos de acción, una selección definida por parte del comandante de la unidad conjunta, una apreciación del comandante si se hace necesaria y una intención del comandante perfeccionada para el desarrollo de la misión. La comparación de los cursos de acción se debe mostrar al comandante y justificarle la manera en que se hizo, ofreciéndole el resultado obtenido para el aparente mejor curso de acción y la razones por las cuales gano. El, de acuerdo a su análisis y a la información recibida tomará una decisión respecto al curso de acción a escoger para el desarrollo de la misión que puede confirmarlo realizado por el Estado Mayor o simplemente de tomar una decisión diferente.</p>
+                            </div>
+
+                            <!-- slide9 -->
+                            <div id="slide9" class="w-content" data-property-width="70vw">
+                                <h2>SIETE PASOS DEL PROCESO DE PLANEAMIENTO CONJUNTO</h2>
+                                <h3>Desarrollo del plan u orden</h3>
+                                <div class="ctrl-pagination" data-orientation="sides">
+                                    <li>
+                                        <div class="instruction"><strong>INSTRUCCIÓN:</strong> Haz clic en el video para conocer más sobre el Desarrollo del Plan u Orden.</div>
+                                        <div class="videobox">
+                                            <a href="https://youtu.be/JWkoZibfv2Q" class="fresco"><img src="content/slide9/prev.png" class="prev" /></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="instruction"><strong>Instrucción:</strong> Reproduzca el video correspondiente al tema de plan de campaña u operaciones y descargue el archivo pdf para afianzar el mismo conocimiento sobre el tema.</div>
+                                        <sup class="tooltip button" title='
+                                            <div class="about">
+                                                <audio controls>
+                                                    <source src="content/slide9/sounds/u3s9-2.mp3" type="audio/mp3">
+                                                    Su navegador no soporta el componente de audio
+                                                </audio>
+                                            </div>'><div class="audio-icon"></div>Audio
+                                        </sup>
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <p><span class="tooltip" data-position-my="left bottom" title='
+                                                        <div class="about">
+                                                            <audio controls>
+                                                                <source src="content/slide9/sounds/u3s9-2-1.mp3" type="audio/mp3">
+                                                                Su navegador no soporta el componente de audio
+                                                            </audio>
+                                                        </div>'><strong>Situación</strong></span></p>
+                                                <ol type="a">
+                                                    <li><span class="tooltip" data-position-my="left bottom" title='
+                                                        <div class="about">
+                                                            <audio controls>
+                                                                <source src="content/slide9/sounds/u3s9-2-1a.mp3" type="audio/mp3">
+                                                                Su navegador no soporta el componente de audio
+                                                            </audio>
+                                                        </div>'>Ambiente</span></li>
+                                                    <li><span class="tooltip" data-position-my="left bottom" title='
+                                                        <div class="about">
+                                                            <audio controls>
+                                                                <source src="content/slide9/sounds/u3s9-2-1b.mp3" type="audio/mp3">
+                                                                Su navegador no soporta el componente de audio
+                                                            </audio>
+                                                        </div>'>Enemigo</span></li>
+                                                    <li><span class="tooltip" data-position-my="left bottom" title='
+                                                        <div class="about">
+                                                            <audio controls>
+                                                                <source src="content/slide9/sounds/u3s9-2-1c.mp3" type="audio/mp3">
+                                                                Su navegador no soporta el componente de audio
+                                                            </audio>
+                                                        </div>'>Propias Tropas</span></li>
+                                                    <li><span class="tooltip" data-position-my="left bottom" title='
+                                                        <div class="about">
+                                                            <audio controls>
+                                                                <source src="content/slide9/sounds/u3s9-2-1d.mp3" type="audio/mp3">
+                                                                Su navegador no soporta el componente de audio
+                                                            </audio>
+                                                        </div>'>Agregaciones y Segregaciones</span></li>
+                                                </ol>
+                                                <p><span class="tooltip" data-position-my="left bottom" title='
+                                                        <div class="about">
+                                                            <audio controls>
+                                                                <source src="content/slide9/sounds/u3s9-2-2.mp3" type="audio/mp3">
+                                                                Su navegador no soporta el componente de audio
+                                                            </audio>
+                                                        </div>'><strong>Misión</strong></span></p>
+                                                <p><span class="tooltip" data-position-my="left bottom" title='
+                                                        <div class="about">
+                                                            <audio controls>
+                                                                <source src="content/slide9/sounds/u3s9-2-3.mp3" type="audio/mp3">
+                                                                Su navegador no soporta el componente de audio
+                                                            </audio>
+                                                        </div>'><strong>Ejecución</strong></span></p>
+                                                <ol type="a">
+                                                    <li><span class="tooltip" data-position-my="left bottom" title='
+                                                        <div class="about">
+                                                            <audio controls>
+                                                                <source src="content/slide9/sounds/u3s9-2-3a.mp3" type="audio/mp3">
+                                                                Su navegador no soporta el componente de audio
+                                                            </audio>
+                                                        </div>'>Intención de CDR</span></li>
+                                                    <li><span class="tooltip" data-position-my="left bottom" title='
+                                                        <div class="about">
+                                                            <audio controls>
+                                                                <source src="content/slide9/sounds/u3s9-2-3b.mp3" type="audio/mp3">
+                                                                Su navegador no soporta el componente de audio
+                                                            </audio>
+                                                        </div>'>Concepto de operaciones</span></li>
+                                                    <li><span class="tooltip" data-position-my="left bottom" title='
+                                                        <div class="about">
+                                                            <audio controls>
+                                                                <source src="content/slide9/sounds/u3s9-2-3c.mp3" type="audio/mp3">
+                                                                Su navegador no soporta el componente de audio
+                                                            </audio>
+                                                        </div>'>Tareas para unidades de maniobra</span></li>
+                                                    <li><span class="tooltip" data-position-my="left bottom" title='
+                                                        <div class="about">
+                                                            <audio controls>
+                                                                <source src="content/slide9/sounds/u3s9-2-3d.mp3" type="audio/mp3">
+                                                                Su navegador no soporta el componente de audio
+                                                            </audio>
+                                                        </div>'>Tareas para otras unidades de apoyo de combate.</span></li>
+                                                    <li><span class="tooltip" data-position-my="left bottom" title='
+                                                        <div class="about">
+                                                            <audio controls>
+                                                                <source src="content/slide9/sounds/u3s9-2-3e.mp3" type="audio/mp3">
+                                                                Su navegador no soporta el componente de audio
+                                                            </audio>
+                                                        </div>'>Instrucciones de coordinación</span></li>
+                                                </ol>
+                                            </div>
+                                            <div class="col-2">
+                                                <p><span class="tooltip" data-position-my="left bottom" title='
+                                                        <div class="about">
+                                                            <audio controls>
+                                                                <source src="content/slide9/sounds/u3s9-2-4.mp3" type="audio/mp3">
+                                                                Su navegador no soporta el componente de audio
+                                                            </audio>
+                                                        </div>'><strong>ASPC</strong></span></p>
+                                                <ol type="a">
+                                                    <li><span class="tooltip" data-position-my="left bottom" title='
+                                                        <div class="about">
+                                                            <audio controls>
+                                                                <source src="content/slide9/sounds/u3s9-2-4a.mp3" type="audio/mp3">
+                                                                Su navegador no soporta el componente de audio
+                                                            </audio>
+                                                        </div>'>Concepto del apoyo logístico</span></li>
+                                                    <li><span class="tooltip" data-position-my="left bottom" title='
+                                                        <div class="about">
+                                                            <audio controls>
+                                                                <source src="content/slide9/sounds/u3s9-2-4b.mp3" type="audio/mp3">
+                                                                Su navegador no soporta el componente de audio
+                                                            </audio>
+                                                        </div>'>Materiales y servicios</span></li>
+                                                    <li><span class="tooltip" data-position-my="left bottom" title='
+                                                        <div class="about">
+                                                            <audio controls>
+                                                                <source src="content/slide9/sounds/u3s9-2-4c.mp3" type="audio/mp3">
+                                                                Su navegador no soporta el componente de audio
+                                                            </audio>
+                                                        </div>'>Apoyo de servicios de sanidad militar</span></li>
+                                                    <li><span class="tooltip" data-position-my="left bottom" title='
+                                                        <div class="about">
+                                                            <audio controls>
+                                                                <source src="content/slide9/sounds/u3s9-2-4d.mp3" type="audio/mp3">
+                                                                Su navegador no soporta el componente de audio
+                                                            </audio>
+                                                        </div>'>Soporte de servicios de personal</span></li>
+                                                </ol>
+                                                <p><strong>Mando y Comunicaciones</strong></p>
+                                                <ol type="a">
+                                                    <li><span class="tooltip" data-position-my="left bottom" title='
+                                                        <div class="about">
+                                                            <audio controls>
+                                                                <source src="content/slide9/sounds/u3s9-2-5a.mp3" type="audio/mp3">
+                                                                Su navegador no soporta el componente de audio
+                                                            </audio>
+                                                        </div>'>Mando</span></li>
+                                                    <li><span class="tooltip" data-position-my="left bottom" title='
+                                                        <div class="about">
+                                                            <audio controls>
+                                                                <source src="content/slide9/sounds/u3s9-2-5b.mp3" type="audio/mp3">
+                                                                Su navegador no soporta el componente de audio
+                                                            </audio>
+                                                        </div>'>Comunicaciones</span></li>
+                                                </ol>
+                                                <a href="" target="_blank"><div class="pdf"></div></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="videobox">
+                                            <a href="content/slide9/final.jpg" class="fresco" data-fresco-group=""><img src="content/slide9/final.jpg" class="prev" /></a>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                        </left>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Navegación-->
+            <section id="pag-navegacion" ptitle="Navegación">
+                <div class="subpage">
+                    <div class="instruction">
+                        <span class="onlymobile"></span>
+                        <span class="notmobile"></span>
+                    </div>
+                    <div class="scheme">
+                        <a href="#" data-page="slide1"><div class="section slide1"></div></a>
+                        <a href="#" data-page="slide2"><div class="section slide2"></div></a>
+
+                        <a href="#" class="w-content-controler" data-content="#slide3"><div class="section section2 slide3"></div></a>
+                        <a href="#" class="w-content-controler" data-content="#slide4"><div class="section section2 slide4"></div></a>
+                        <a href="#" class="w-content-controler" data-content="#slide5"><div class="section section2 slide5"></div></a>
+                        <a href="#" class="w-content-controler" data-content="#slide6"><div class="section section2 slide6"></div></a>
+                        <a href="#" class="w-content-controler" data-content="#slide7"><div class="section section2 slide7"></div></a>
+                        <a href="#" class="w-content-controler" data-content="#slide8"><div class="section section2 slide8"></div></a>
+                        <a href="#" class="w-content-controler" data-content="#slide9"><div class="section section2 slide9"></div></a>
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="not_print">
+            <div class="measuring-progress" data-type="circle"></div>
+
+            <nav label="Características globales" class="globals">
+                <menu>
+                    <menuitem data-global-id="return">
+                        <i title="Maximizar" class="ion-arrow-expand tooltip maximize" data-position-at="top"></i>
+                        <i title="Minimizar" class="ion-arrow-shrink tooltip minimize" data-position-at="top"></i>
+                    </menuitem>
+                    <menuitem data-global-id="close_all"><i title="Regresar" class="ion-reply tooltip" data-position-at="top"></i></menuitem>
+                </menu>
+            </nav>
+
+            <div id="subpages_menu">
+                <div class="button ion-chevron-left" previous-page></div>
+                <ul class="button" subpages-menu></ul>
+                <div class="button ion-chevron-right" next-page></div>
+            </div>
+
+            <div id="page_number"></div>
+        </footer>
+
+    </div>
+
+    <!--Créditos-->
+    <div id="credits-page" ptitle="Créditos" style="display:none;">
+        <div id="credits_subpage">
+            <h2>Bibliografía</h2>
+            <ul class="data_list">
+                <li>Ancker, C. J. (2013). The evolution of mission command 4 in US Army Doctrine, 1905 to the present. <cite>Military Review</cite>, 93(2), 42.</li>
+                <li>Anzelini, L., & Poczynok, I. (2014). El planeamiento estratégico militar en la Argentina (2003-2013): reflexiones en torno al gobierno político de la defensa. <cite>Austral: Revista Brasileira de Estratégia & Relaçoes Internacionais, </cite>3(6), 143-167.</li>
+                <li>Barnett, B. (2005). TED. Let´s rethink America´s military strategy. Recuperado de: <a href="https://www.ted.com/talks/thomas_barnett_let_s_rethink_america_s_military_strategy" target="_blank">https://www.ted.com/talks/[...]</a></li>
+                <li>Borgoñón, R. M. G. (2017). La antifragilidad: esquema de su aplicación en el arte y método de diseño operacional.</li>
+                <li>Boukhtouta, A., Bedrouni, A., Berger, J., Bouak, F., & Guitouni, A. (2004, July). A survey of military planning systems. <cite>In The 9th ICCRTS Int. Command and Control Research and Technology Symposium </cite>(pp. 5-7).</li>
+                <li>Byman, D. L., & Waxman, M. C. (2000). Kosovo and the great air power debate. <cite>International security</cite>, 24(4), 5-38.</li>
+                <li>Carpenter, T. R. (2016). <cite>Command and control of joint air operations through mission command.</cite> 609th Air Operations Center Al Udeid AB Qatar.</li>
+                <li>Colom, G. (2011). El proceso de transformación militar en España (2004-2010). <cite>Revista UNISCI</cite>, (27), 117-131.</li>
+                <li>Crosbie, T. (2019). Getting the Joint Functions Right. <cite>Joint Force Quarterly</cite>, 94(3), 108-112.</li>
+                <li>Cunningham, G. K. (2020). Designing Effective Military Strategies under Uncertainty. Parameters, 50(2), 51-59.</li>
+                <li>de Lara, V. P. (2004). Sumario del nivel político de la Guerra. <cite>Boletín de Información</cite>, (283), 3.</li>
+                <li>Eikmeier, D. (2018). Guerra conjunta: lecciones del Conflicto del Atlántico Sur.</li>
+                <li>Eikmeier, D. C. (2004). Center of gravity analysis. <cite>Military Review</cite>, 84(4), 2-5.</li>
+                <li>Eikmeier, D. C. (2007). A logical method for center-of-gravity analysis. <cite>Military Review</cite>, 87(5), 62.</li>
+                <li>Eikmeier, D. C. (2010). <cite>Redefining the center of gravity.</cite> NATIONAL DEFENSE UNIV WASHINGTON DC.</li>
+                <li>Eikmeier, D. C. (2013). Give Carl von Clausewitz and the Center of Gravity a Divorce. <cite>Journal Article| Jul,</cite> 2(2), 30am.</li>
+                <li>Eikmeir, D. (2010). Art and Operational Design. Recuperado de: <a href="https://www.youtube.com/watch?v=nBStKk3fE4E" target="_blank">www.youtube.com/[...]</a></li>
+                <li>FFMM de Colombia (2018). Manual Fundamental Conjunto. MFC 1.0 Doctrina Conjunta. Centro de Doctrina Conjunta de las Fuerzas Militares de Colombia. </li>
+                <li>FFMM de Colombia (2018). Manual Fundamental Conjunto. MFC 3.0 Operaciones Conjuntas con referenciación jurídica (borrador no oficial). Centro de Doctrina Conjunta de las Fuerzas Militares de Colombia. </li>
+                <li>FFMM de Colombia (2018). Manual Fundamental Conjunto. MFC 5.0 Planeamiento Conjunto (borrador no oficia). Centro de Doctrina Conjunta de las Fuerzas Militares de Colombia. </li>
+                <li>Flores, R. S. (2017). <cite>Searching for Order Within Chaos: Complexity Theorys Implications to Intelligence Support During Joint Operational Planning.</cite> US Army Command and General Staff College Fort Leavenworth United States.</li>
+                <li>Frentzel II, W. Y., Bryson, J. M., & Crosby, B. C. (2000). Strategic planning in the military: The US Naval Security Group changes its strategy, 1992–1998. <cite>Long Range Planning</cite>, 33(3), 402-429.</li>
+                <li>Glasl, F. (1982). The process of conflict escalation and roles of third parties. <cite>In Conflict management and industrial relations </cite>(pp. 119-140). Springer, Dordrecht.</li>
+                <li>GNIESKO, C. (2020). LA URGENTE NECESIDAD DE PENSAR OPERACIONALMENTE. <cite>Revista de la Academia del Guerra del Ejército Ecuatoriano,</cite> 13(1), 9.</li>
+                <li>González, G. (2017). De la guerra asimétrica a la guerra híbrida.</li>
+                <li>Gorski, S. (2010). <cite>Refining Intelligence Support to Irregular Warfare.</cite> NAVAL WAR COLL NEWPORT RI JOINT MILITARY OPERATIONS DEPT.</li>
+                <li>Harvard, J. W. (2013). <cite>Airmen and Mission Command.</cite> AIR UNIV MAXWELL AFB AL AIR FORCE RESEARCH INST.</li>
+                <li>Hawkins, W. R. (2000). Imposing peace: Total vs. limited wars, and the need to put boots on the ground. Parameters, 30(2), 72.</li>
+                <li>Joint Staff, J., & Suffolk, V. (2011). 7. Planner’s Handbook for Operational Design. <cite>Joint Staff, J-7 Joint and Coalition Warfighting.</cite></li>
+                <li>Kenny, A., Locatelli, O. A., & Zarza, L. A. (2017). Arte y diseño operacional: una forma de pensar opciones militares.</li>
+                <li>Kumar, G., Banerjee, R. N., Meena, P. L., & Ganguly, K. K. (2017). Joint planning and problem solving roles in supply chain collaboration. <cite>IIMB management review</cite>, 29(1), 45-57.</li>
+                <li>Locatelli, O. A. (2016). Los generales y los elementos del diseño operacional.</li>
+                <li>López, S. D. (2015). La guerra de Vietnam y la asimetría como factor determinante.</li>
+                <li>McGrath, J. J. (2006). <cite>Boots on the ground: Troop density in contingency operations.</cite> Government Printing Office.</li>
+                <li>Military History not Visualized (2018). Explained: Tactics – Operations – Strategy. Recuperado de: <a href="https://www.youtube.com/watch?v=4yk0gROTHnI" target="_blank">www.youtube.com/[...]</a></li>
+                <li>Morris, V. R. (2017). Complex Intelligence Preparation of the Battlefield in Ukrainian Antiterrorism Operations. <cite>Military Review</cite>, 97(1), 58.</li>
+                <li>Murray, N. (2014). The Role of Professional Military Education in Mission Command. <cite>Joint Force Quarterly,</cite> 72, 10-13.</li>
+                <li>Nye, J. (2010). TED. Global power shifts. Recuperado de: <a href="https://www.ted.com/talks/joseph_nye_global_power_shifts" target="_blank">www.ted.com/[...]</a></li>
+                <li>Paglione, F. G. (2014). El empleo del poder aéreo de la OTAN en Kosovo.</li>
+                <li>Palacios, J. C. R. (2012). El Planeamiento operacional de las fuerzas aliadas en el desembarco en Normandía en 1944, a la luz de los actuales elementos del diseño operacional.</li>
+                <li>Piella, G. C. (2011). El proceso de planeamiento de la defensa nacional. <cite>Revista general de marina</cite>, 260(5), 833-842.</li>
+                <li>Planning, J. O. JP 5-0. Joint Chiefs of Staff 2017, June 16, viewed 18 April 2018.</li>
+                <li>Rowlett, R. (2010). Joint publication 3-0, joint operations. <cite>Reliability Theory & Applications</cite>, 7(4), 171-173.</li>
+                <li>Rowlett, R., Young, C. A., Mangan, A. F., & Townsend, S. M. (2015). The Way Ahead for Joint Operations and Planning Doctrine. <cite>JFQ: Joint Force Quarterly</cite>, 77, 141-148.</li>
+                <li>Rowlett, R., Young, C. A., Mangan, A. F., & Townsend, S. M. (2015). The Way Ahead for Joint Operations and Planning Doctrine. <cite>JFQ: Joint Force Quarterly</cite>, 77, 141-148.</li>
+                <li>Rynning, S. (2003). Why not NATO? Military planning in the European Union. <cite>The Journal of Strategic Studies</cite>, 26(1), 53-72.</li>
+                <li>Schunck, J. A. (2017). El diseño operacional: Guerra del Líbano 2006.</li>
+                <li>Segura, A. A. (2010). El planeamiento de la defensa. <cite>Ejército: de tierra español</cite>, (833), 82-87.</li>
+                <li>Tibiletti, L. (2001). Los conceptos de seguridad y defensa en América Latina. <cite>Red de Seguridad y Defensa de América Latina.</cite></li>
+                <li>Triulzi, M. S. (2016). Irak 2003 y el planeamiento en el nivel operacional.</li>
+                <li>Triulzi, M. S. (2016). Irak 2003 y el planeamiento en el nivel operacional.</li>
+                <li>Ugarte, J. M. (2001). Los conceptos de defensa y seguridad en América Latina: sus peculiaridades respecto de los vigentes en otras regiones, y las consecuencias políticas de tales peculiaridades. <cite>Latin American Studies Association.</cite></li>
+                <li>Van Uhm, P. (2008). TED. Why I choose a gun?. Recuperado de: <a href="https://www.ted.com/talks/peter_van_uhm_why_i_chose_a_gun" target="_blank">www.ted.com/[...]</a></li>
+                <li>Wade, N. M. (2012). <cite>The Joint Forces Operations & Doctrine Smartbook: Guide to Joint, Multinational & Interagency Operations.</cite> The Lightning Press.</li>
+                <li>Will, I., & Country, M. (2016). El arte no convencional y la guerra moderna. Military review.</li>
+                <li>Winnefeld, J. A., & Johnson, D. J. (1991). <cite>Command and Control of Joint Air Operations. Some Lessons Learned from Four Case Studies of an Enduring Issue.</cite> RAND CORP SANTA MONICA CA.</li>
+            </ul>
+            <h2>Créditos</h2>
+            <div class="row">
+                <div class="col-2">
+                    <div>
+                        <h3>Expertos temáticos</h3>
+                        <cite>Hamilton Osiris Jiménez Ortiz</cite>
+                    </div>
+                    <div>
+                        <h3>Diseño, concepción y desarrollo</h3>                        
+                        <cite>Equipo MK Studio SAS</cite>
+                    </div>
+                    <div>
+                        <h3>Integrador de contenidos</h3>
+                        <cite>Santiago Bernal García</cite>
+                    </div>
+                    <div class="editions">
+                        <br />
+                        1ª edición: diciembre 2020
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div>
+                        <br />
+                        <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Obra publicada bajo licencia:<br />Creative Commons Atribución-Compartir Igual 4.0 Internacional<br /><br />
+                        <img src="img/cc.png" alt="Creative Commons" /></a>
+                    </div>
+
+                    <div>
+                        <p>OVA producido en <a href="https://github.com/davidherney/tepuy/" target="_blank">Tepuy - Plantilla para contenido interactivo</a>.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Glosario -->
+    <div id="library-page" style="display:none;">
+        <div id="library_subpage">
+            <h2>Glosario</h2>
+            <p><strong>NOTA ACLARATORIA: </strong>El presente Glosario se ofrece como guía, más no como referencia de términos oficiales, ya que la doctrina aun se encuentra en estructuración y los términos oficiales militares para ser empleados en documentos oficiales de operacionales militares deben ser consultados en los manuales oficiales autorizados por el Comando General de las FFMM de Colombia. Los términos aquí presentados fueron referenciados de los manuales MFC 1.0, MFC 3.0, MFC 5.0 y del DOD Dictionary of Military and Associated Terms.</p>
+            <ul class="data_list">
+                <li><strong>Acceso Operacional.</strong> La capacidad de proyectar una fuerza militar en un área operacional con suficiente libertad de acción para cumplir la misión.</li>
+                <li><strong>Acción Unificada.</strong> Sincronización, coordinación y/o integración de actividades de entidades gubernamentales y no gubernamentales con las operaciones militares para lograr unidad de esfuerzo.</li>
+                <li><strong>Actividad. </strong>1. Una función, misión, acción o colección de acciones. 2. Acción que realiza una unidad, organización o instalación para cumplir una función o misión.</li>
+                <li><strong>Actividades Contra el Narcotráfico.</strong> Medidas adoptadas para detectar, interdecir, interrumpir o restringir cualquier actividad que esté razonablemente relacionada con el tráfico ilícito de drogas.</li>
+                <li><strong>Actividades de Estabilidad.</strong> Diversas misiones, tareas y actividades militares, en coordinación con otros instrumentos de poder nacional para mantener o restablecer un ambiente seguro y protegido, brindar servicios gubernamentales esenciales, reconstrucción de infraestructura de emergencia y asistencia humanitaria dentro o fuera del territorio nacional. Los términos que esta publicación propone están señalados con un asterisco y los tomados de otros manuales están acompañados de su correspondiente referencia en paréntesis.</li>
+                <li><strong>Acuerdos de Control de Armas.</strong> Aceptación, escrita o no, de una o más medidas de control de armas por dos o más naciones.</li>
+                <li><strong>Adaptación de la Fuerza. </strong>Proceso de determinar la combinación correcta de unidades y la secuencia de su despliegue en apoyo del comandante de una fuerza conjunta.</li>
+                <li><strong>Administración del Riesgo.</strong> Proceso de identificar, evaluar y controlar peligros y riesgos que emergen de los factores operacionales y tomar decisiones que equilibran el costo de los riesgos con el beneficio de la misión.</li>
+                <li><strong>Adversario. </strong>Parte reconocida como potencialmente hostil a una parte amistosa y contra la cual se puede considerar el uso de la fuerza.</li>
+                <li><strong>Agencias. </strong>Dependencias pertenecientes al Ministerio de Defensa Nacional, encargadas de realizar una actividad de abastecimiento o prestar un servicio común a más de una Fuerza Militar.</li>
+                <li><strong>Agregar.</strong> Ubicar unidades o personal en una organización con carácter relativamente temporal.</li>
+                <li><strong>Aguas territoriales. </strong>Cinturón de espacio oceánico adyacente y medido desde la línea de base de la costa hasta un ancho máximo de 12 millas náuticas.</li>
+                <li><strong>Aislar. </strong>Tarea táctica de la misión que requiere una unidad para cercar tanto física, como sicológicamente a un enemigo de fuentes de apoyo, negarle la libertad de movimiento y evitar que tenga contacto con otras fuerzas enemigas.</li>
+                <li><strong>Alcance Operacional.</strong> Distancia y la duración a través de las cuales una unidad puede emplear con éxito las capacidades militares.</li>
+                <li><strong>Alianza. </strong>Relación que resulta de un acuerdo formal entre dos o más naciones para objetivos amplios y de largo plazo que fomenten los intereses comunes de los miembros.</li>
+                <li><strong>Alistamiento.</strong> Habilidad de fuerzas militares para combatir y satisfacerlas demandas de las misiones asignadas. ambiente de información militar.</li>
+                <li><strong>Ambiente Electromagnético. </strong>El producto resultante de la distribución de poder y tiempo, en varios rangos de frecuencia, de los niveles de radiación o conducción de la emisión electromagnética que encuentra una fuerza, sistema o plataforma militar al realizar su misión asignada en su ambiente operacional previsto.</li>
+                <li><strong>Ambiente Hostil.</strong> Ambiente operacional en el cual las fuerzas del gobierno anfitrión ya sean opuestas o receptivas a las operaciones que una unidad intenta ejecutar, no tienen el control del territorio ni la población en el área de operaciones prevista.</li>
+                
+
+                <li><strong>Ambiente Incierto.</strong> Ambiente operacional en el que las fuerzas gubernamentales de la nación anfitriona, ya sean opuestas o afines a las operaciones que una unidad planea conducir, no tienen un control totalmente efectivo del territorio y la población en el área operacional prevista.</li>
+                <li><strong>Ambiente Operacional.</strong> Composición de condiciones, circunstancias e influencias que afectan el empleo de las capacidades y pesan en las decisiones del comandante.</li>
+                <li><strong>Ambiente Permisivo. </strong>Ambiente operacional en que los militares y las instituciones de imposición de la ley del país anfitrión tienen el control, así como la intención y la capacidad de asistir las operaciones que una unidad planea conducir.</li>
+                <li><strong>Amenaza.</strong> Cualquier combinación de actores, entidades o fuerzasque tienen la capacidad y la intención de afectar las fuerzasamigas, los intereses nacionales o la nación.</li>
+                <li><strong>Análisis del Terreno.</strong> La recopilación, el análisis, la evaluación y la interpretación de información sobre las características naturales y artificiales del terreno, combinada con otros factores relevantes, para predecir el efecto del terreno en las operaciones militares.</li>
+                <li><strong>Antiacceso.</strong> Acción, actividad o capacidad, generalmente de largo alcance, diseñada para evitar que una fuerza enemiga que avanza entre en un área de operaciones.</li>
+                <li><strong>Antiterrorismo. </strong>Conjunto de actividades defensivas y preventivas tomadas para reducir la vulnerabilidad al terrorismo de fuerzas, individuos o propiedad.</li>
+                <li><strong>Apoyo Aéreo Cercano. </strong>Acción aérea ejecutada por aeronaves tripuladas o no tripuladas, de ala fija y rotatoria, contra objetivos hostiles que están muy cerca de las fuerzas amigas y que requieren una integración detallada de cada misión aérea con el fuego y el movimiento de esas fuerzas.</li>
+                <li><strong>Apoyo Cercano. </strong>Acción de la fuerza de apoyo contra objetivos u objetivos que estén lo suficientemente cerca de la fuerza soportada como para requerir una integración detallada o coordinación de la acción de soporte con el fuego, el movimiento u otras acciones de la fuerza apoyada.</li>
+                <li><strong>Apoyo de Fuegos Conjunto.</strong> Fuegos que apoyan a las fuerzas terrestres, aéreas, marítimas y a las unidades de fuerzas especiales, con el propósito de permitir su movimiento y maniobra, a fin de controlar territorio, poblaciones, espacio aéreo y aguas claves.</li>
+                <li><strong>Apoyo de Fuegos conjunto. </strong>Fuegos que apoyan a las fuerzas terrestres, aéreas, marítimas y a las unidades de fuerzas especiales, con el propósito de permitir su movimiento y maniobra, a fin de controlar territorio, poblaciones, espacio aéreo y aguas claves.</li>
+                <li><strong>Apoyo de la Defensa a la Autoridad Civil.</strong> Soporte proporcionado por las Fuerzas Militares de Colombia y todas las instituciones que integran el sector Defensa, en respuesta a solicitudes de asistencia de las autoridades civiles nacionales para emergencias domésticas de cualquier índole, apoyo a la imposición de la ley y otras actividades con entidades calificadas para situaciones</li>
+                <li><strong>Apoyo de Servicios de Personal.</strong> Actividades de sostenimiento suministradas por las Fuerzas que apoyan a sus miembros durante ejercicios como en operaciones.</li>
+                <li><strong>Apoyo Directo.</strong> Misión que requiere una fuerza para apoyar a otra fuerza específica y autorizarla a responder directamente a la solicitud de asistencia de la fuerza apoyada.</li>
+                <li><strong>Apoyo General. </strong>Apoyo que se le da a la fuerza apoyada como un todo y no a una subdivisión particular de la misma.</li>
+                <li><strong>Apoyo Mutuo. </strong>Apoyo que las unidades se dan mutuamente contra un enemigo por sus tareas asignadas, su posición relativa entre sí y con el enemigo y sus capacidades inherentes.</li>
+                <li><strong>Apoyo Operacional Contra el Narcotráfico.</strong> Apoyo proporcionado por unidades militares contra el narcotráfico a las naciones anfitrionas y a las agencias de imposición de la ley, que involucra personal militar y su equipo asociado.</li>
+                <li><strong>Apoyo Operacional de Contratos.</strong> Proceso de planeamiento y obtención de suministros, servicios y construcción provenientes de fuentes comerciales en apoyo de las operaciones conjuntas.</li>
+                <li><strong>Apoyo.</strong> Acción de una fuerza que ayuda, protege, complementa o sostiene a otra de acuerdo con una orden o directriz que establece tal acción.</li>
+                <li><strong>Apreciación del Estado mayor.</strong> Evaluación de cómo los factores en el área funcional de apoyo del estado mayor impactan la misión.</li>
+                <li><strong>Area Conjunta de Operaciones Especiales.</strong> Un área de tierra, mar y espacio aéreo asignada por un comandante de una fuerza conjunta al comandante de una fuerza conjunta de operaciones especiales para realizar actividades de operaciones especiales.</li>
+                <li><strong>Area de Control del Espacio Aéreo. </strong>Es el espacio aéreo que está definido lateralmente por los límites del área de operaciones, y puede subdividirse en sectores de control del espacio aéreo.</li>
+                <li><strong>Área de Influencia. </strong>Un área geográfica en la que un comandante es directamente capaz de operaciones de apoyo a la maniobra o al fuego normalmente bajo el mando o control del comandante. </li>
+                <li><strong>Área de interés. </strong>Área que le compete al comandante, incluyendo el área de influencia y las áreas adyacentes a la misma, y se extiende en el territorio enemigo.</li>
+                <li><strong>Area de operaciones conjuntas.</strong> Área de tierra, mar y/o espacio aéreo, definida por un comandante de comando conjunto o un comandante unificado subordinado, en la que un comandante de fuerza conjunta, normalmente un comandante de una fuerza de tarea conjunta ejecuta operaciones militares para cumplir una misión específica.</li>
+                <li><strong>Área de operaciones conjuntas. </strong>Área de tierra, mar y/o espacio aéreo, definida por un comandante de comando conjunto o un comandante unificado subordinado, en la que un comandante de fuerza conjunta, normalmente un comandante de una fuerza de tarea conjunta ejecuta operaciones militares para cumplir una misión específica.</li>
+                <li><strong>Área de operaciones. </strong>Área definida por el comandante de la fuerza conjunta para las fuerzas terrestres y marítimas que debe ser lo suficientemente grande para ejecutar sus misiones y proteger sus fuerzas.</li>
+                <li><strong>Área de Responsabilidad.</strong> Área geográfica asociada con un comando conjunto dentro de la cual su comandante tiene autoridad para planear y conducir operaciones.</li>
+                <li><strong>Area Operacional.</strong> Término general que abarca términos más descriptivos (como área de responsabilidad y área de operaciones conjuntas) para las áreas geográficas en las que se conducen las operaciones militares.</li>
+                <li><strong>Armas de Destrucción Masiva.</strong> Armas químicas, biológicas, radiológicas o nucleares con un alto grado de destrucción o de causar bajas masivas y que excluyen el medio de transporte o propulsión del arma cuando dicho medio es una parte separable y divisible de la misma.</li>
+                <li><strong>Armas no letales.</strong> Armas, dispositivos y municiones específicamente diseñados y principalmente empleados para incapacitar personal o material, al tiempo que reduce al mínimo las muertes, lesiones permanentes al personal y daños no deseados a la propiedad y el medio ambiente. arte operacional. Enfoque cognitivo de los comandantes y estados mayores apoyados en su habilidad, conocimiento, experiencia, creatividad, criterio y juicio, en el desarrollo de estrategias, campañas y operaciones, para organizar y emplear fuerzas militares integrando fines, formas y medios.</li>
+                <li><strong>Arte Estratégico.</strong> Capacidad de entender la variable estratégica (relativa al área operacional y conceptualizar cómo se pueden cumplir los objetivos deseados, establecidos en la guía de nivel estratégico, mediante el empleo de capacidades militares.Enfoque cognitivo de los comandantes y estados mayores apoyados en su habilidad, conocimiento, experiencia, creatividad, criterio y juicio, en el desarrollo de estrategias, campañas y operaciones, para organizar y emplear fuerzas militares integrando fines, formas y medios.</li>
+                <li><strong>Arte Operacional. </strong>El enfoque cognitivo de los comandantes y el personal apoyado por su habilidad, conocimiento, experiencia, creatividad y juicio, para desarrollar estrategias, campañas y operaciones para organizar y emplear fuerzas militares integrando fines, maneras y medios.</li>
+                <li><strong>Asignar. </strong>Ubicar unidades o personal en una organización con un carácter relativamente permanente o cuando dicha organización controle y administre las unidades o el personal para la función principal o la mayor parte de las funciones.</li>
+                <li><strong>Asistencia a Fuerzas de Seguridad.</strong> Actividades del Ministerio de Defensa que contribuyen a la acción unificada del Gobierno para apoyar el desarrollo de la habilidad y la capacidad de las fuerzas de seguridad extranjeras y sus instituciones de apoyo.</li>
+                <li><strong>Asistencia a Fuerzas de Seguridad.</strong> Actividades del Ministerio de Defensa que contribuyen a la acción unificada del Gobierno para apoyar el desarrollo de la habilidad y la capacidad de las fuerzas de seguridad extranjeras y sus instituciones de apoyo.</li>
+                <li><strong>Asistencia en el extranjero.</strong> Asistencia a naciones extranjeras que van desde la venta de equipos militares y apoyo para la defensa interna en el extranjero hasta donaciones de alimentos y suministros médicos para ayudar a los sobrevivientes de desastres naturales y antrópicos que pueden proporcionarse a través de asistencia para el desarrollo, asistencia humanitaria y asistencia de seguridad.</li>
+                <li><strong>Asociados de la Acción Unificada. </strong>Son aquellas fuerzas militares, organizaciones gubernamentales y no gubernamentales y elementos del sector privado con quienes las unidades militares planean, coordinan, sincronizan e integran durante la conducción de las operaciones.</li>
+                <li><strong>Asuntos Públicos.</strong> Actividades de comunicación con audiencias externas e internas.</li>
+                <li><strong>Autoridad Coordinadora. </strong>Comandante o individuo que tiene autoridad para requerir la consulta entre las funciones o actividades específicas que involucran unidades de dos o más Fuerzas, componentes de Fuerza multinacional o conjunta o unidades de la misma Fuerza o institución, pero no tiene autoridad para ejercer mando y control.</li>
+                <li><strong>Autoridad de Control del Espacio Aéreo.</strong> Es el comandante designado para asumir la responsabilidad general del funcionamiento del sistema de control del espacio aéreo en el área de control del espacio aéreo.</li>
+                <li><strong>Autoridad Directora para Logística.</strong> Autoridad del comandante de comando conjunto para emitir directrices a los comandantes subordinados, que aseguran la ejecución efectiva de los planes de operación aprobados, optimizan el uso o la reasignación de los recursos disponibles y previenen o eliminan instalaciones redundantes y/o funciones superpuestas entre los comandos de componentes de Fuerza.</li>
+                <li><strong>Batalla. </strong>Conjunto de combates relacionados, de mayor duración y que involucran fuerzas más grandes que en un combate.</li>
+                <li><strong>Borde Delantero del área de Combate.</strong> Límite más adelantado de una serie de áreas en las que se despliegan unidades de combate terrestre excluyendo las áreas en las que operan las fuerzas de cobertura y protección, designadas para coordinar el apoyo fuegos, el posicionamiento de fuerzas y la maniobra de</li>
+                <li><strong>Cadena de Mando.</strong> Sucesión de comandantes a través de la cual se ejerce el mando, de un superior a un subordinado.</li>
+                <li><strong>Campaña. </strong>Serie de operaciones mayores relacionadas dirigidas a lograr objetivos estratégicos y operacionales dentro de un tiempo y espacio dados.</li>
+                <li><strong>Capacidad Crítica.</strong> Un medio que se considera un facilitador crucial para un centro de gravedad función como tal y es esencial para el logro de los objetivos. capacidades militares aliadas para las operaciones de defensa mutua y multinacional.</li>
+                <li><strong>Centro de Gravedad.</strong> Medio que tiene la capacidad inherente de lograr el objetivo.</li>
+                <li><strong>Centro de Operaciones Civiles-Militares.</strong> Organización normalmente conformada por personal de acción integral, establecida para planear y facilitar la coordinación de las actividades de las Fuerzas Militares con la población e instituciones locales,</li>
+                <li><strong>Ciberespacio.</strong> Dominio global dentro del ambiente de la información consistente en redes interdependientes de infraestructura de tecnologías de la información y datos contenidos que incluyen. Internet, telecomunicaciones, redes, sistemas informáticos y procesadores y controladores integrados.</li>
+                <li><strong>Ciberseguridad.</strong> Prevención de daño, protección y restauración de computadoras, sistemas de comunicaciones electrónicas, servicios de comunicaciones electrónicas, comunicación por cable y comunicación electrónica, incluida la información contenida en ellos, para garantizar su disponibilidad, integridad, autenticación, confidencialidad y acceso .</li>
+                <li><strong>Comandante Apoyado. </strong>En el contexto de la relación de mando “apoyo”, el comandante que recibe asistencia de la fuerza o capacidades de otro comandante, y que es responsable de garantizar que el comandante que apoya entienda la asistencia requerida.</li>
+                <li><strong>Comandante de Comando Conjunto.</strong> Autoridad de mando no delegable de un comando conjunto para desempeñar las funciones de mando sobre las unidades asignadas que involucran organizar y emplear mandos y fuerzas, asignar tareas, designar objetivos y proporcionar dirección autorizada sobre todos los aspectos necesarios de las operaciones militares, entrenamiento conjunto y logística, para cumplir las misiones asignadas al mando.</li>
+                <li><strong>Comandante de Fuerza Conjunta.</strong> Término general que se aplica a un comandante de comando conjunto o comandante de una fuerza de tarea conjunta autorizado para ejercer el mando operacional (autoridad de mando) o el control operacional sobre una fuerza conjunta.</li>
+                <li><strong>Comandante del Componente Aéreo de la Fuerza Conjunta.</strong> Comandante dentro de un comando conjunto, comando unificado subordinado o fuerza de tarea conjunta responsable de recomendar al comandante de la fuerza conjunta el empleo adecuado de unidades aéreas asignadas, agregadas y/o disponibles para la distribución de tareas aéreas; planeamiento y coordinación de operaciones aéreas; o ejecución de las misiones operacionales que se le asignen.</li>
+                <li><strong>Comandante del Componente de Operaciones Especiales de la Fuerza Conjunta.</strong> Comandante dentro de un comando conjunto, comando unificado subordinado o fuerza de tarea conjunta responsable de recomendar al comandante de la fuerza conjunta el empleo adecuado de unidades de fuerzas especiales asignadas, agregadas y/o disponibles para la distribución de tareas, planeamiento y coordinación de operaciones especiales o ejecución de las misiones operacionales que se le asignen.</li>
+                <li><strong>Comandante del Componente Naval de la Fuerza Conjunta.</strong> Comandante dentro de un comando conjunto, comando unificado subordinado o fuerza de tarea conjunta responsable de recomendar al comandante de la fuerza conjunta el empleo adecuado de unidades navales asignadas, agregadas y/o disponibles para la distribución de tareas navales; planeamiento y coordinación de operaciones navales; o ejecución de las misiones operacionales que se le asignen.</li>
+                <li><strong>Comandante del Componente Terrestre de la Fuerza Conjunta. </strong>Comandante dentro de un comando conjunto, comando unificado subordinado o fuerza de tarea conjunta responsable de recomendar al comandante de la fuerza conjunta el empleo adecuado de unidades terrestres asignadas, agregadas y/o disponibles para la distribución de tareas terrestres; planeamiento y coordinación de operaciones terrestres; o ejecución de las misiones operacionales que se le asignen.</li>
+                <li><strong>Comandante que Apoya. </strong>1. El comandante que proporciona fuerzas u otro tipo de apoyo a un comandante apoyado o quien desarrolla el plan de apoyo. 2. En el contexto de la relación de mando “apoyo”, el comandante que ayuda, protege, complementa o sostiene la fuerza de otro comandante, y que es responsable de proporcionar la asistencia requerida por el comandante apoyado.</li>
+                <li><strong>Comando Conjunto. </strong>Un mando unificado o especificado con una amplia misión continua bajo un único comandante establecido y así designado por el Presidente, a través del Ministro de Defensa y con el asesoramiento y la asistencia del Comandante General de las FFMM.</li>
+                <li><strong>Comando de Componente de Fuerza.</strong> Comando que incluye el comandante del componente de Fuerza y todos los individuos, unidades, destacamentos, organizaciones e instalaciones bajo ese comando, junto con las fuerzas de apoyo que han sido asignadas.</li>
+                <li><strong>Comando de Componente Funcional.</strong> Mando generalmente compuesto de unidades de dos o más Fuerzas que pueden establecerse en todo el rango de las operaciones militares para cumplir misiones operacionales particulares que pueden ser de corta duración o pueden extenderse por un período de tiempo.</li>
+                <li><strong>Comando Específico.</strong> Unidad militar compuesta principalmente por componentes asignados de una sola Fuerza para desempeñarse dentro de una organización conjunta que tiene una misión amplia y continua, normalmente funcional, y es establecido y designado por el comandante general de las Fuerzas Militares.</li>
+                <li><strong>Comando Subordinado. </strong>Unidad militar incluyendo el comandante y todos aquellos individuos, unidades, destacamentos, organizaciones o instalaciones que han sido puestos bajo el mando por una autoridad competente que establece la relación de subordinación.</li>
+                <li><strong>Comando Unificado Subordinado.</strong> Unidad militar conjunta con una misión amplia y permanente, bajo un solo comandante, conformado por componentes significativos asignados de dos o más Fuerzas, que es establecido y designado el comandante de comando conjunto, cuando así lo autorice el comandante general de las Fuerzas Militares.</li>
+                <li><strong>Comando. </strong>1. La autoridad que un comandante de las fuerzas armadas ejerce legalmente sobre subordinados en virtud de rango o asignación. 2. Una orden dada por un comandante; ese es la voluntad del comandante expresada, con el fin de llevar a cabo una acción. 3. Una unidad o unidades, una organización o un área bajo el mando de una individual.</li>
+                <li><strong>Comando. </strong>Unidad o unidades, organización o área bajo el mando de un individuo como derecho de los conflictos armados.</li>
+                <li><strong>Compatibilidad.</strong> Estado logrado cuando se usa la misma doctrina, procedimientos o equipos.</li>
+                <li><strong>Componente.</strong> 1. Una de las organizaciones subordinadas que constituyen una fuerza conjunta. 2. En logística, una parte o combinación de piezas que tienen una función específica, que puede ser instalado o reemplazado sólo como una entidad.</li>
+                <li><strong>Comunicación Estratégica.</strong> Esfuerzos del gobierno nacional enfocados en comprender y atraer audiencias clave para crear, fortalecer o preservar condiciones favorables para el avance de los intereses, políticas y objetivos del gobierno nacional mediante el uso de programas, planes, temas, mensajes y productos sincronizados con las acciones de todos los instrumentos de poder nacional.</li>
+                <li><strong>Comunidad Conjunta de Planeamiento y Ejecución.</strong> Organizaciones, comandos y dependencias involucradas en la capacitación, preparación, movilización, despliegue, empleo, apoyo, mantenimiento, redespliegue y desmovilización de fuerzas militares asignadas o comprometidas a una operación conjunta.</li>
+                <li><strong>Concepto de la Operación.</strong> Enunciado verbal o gráfico que expresa clara y concisamente lo que el comandante pretende lograr y como lo hará, usando los recursos disponibles.</li>
+                <li><strong>Condición. </strong>1. Variable de un ambiente operacional o situación en la que se espera que una unidad, sistema o individuo opere y que puede afectar su rendimiento. 2. Estado físico o de comportamiento de un sistema que se requiere para el logro de un objetivo.</li>
+                <li><strong>Conjuntez. </strong>Es la integración de las fortalezas de al menos dos componentes de las FF. MM. en un esfuerzo coordinado para lograr un objetivo común. Esto implica la combinación cruzada de Fuerzas en la que se entiende que la capacidad de la fuerza conjunta es sinérgica, porque la suma es mayor que sus partes (la capacidad de componentes individuales). Algunas actividades militares compartidas son menos conjuntas y más “comunes”; en este uso, común significa simplemente capacidades o actividades mutuas, compartidas o superpuestas entre dos o más Fuerzas.</li>
+                <li><strong>Conjunto.</strong> Denota actividades, operaciones, organizaciones, etc., en las que participan elementos de dos o más Fuerzas.</li>
+                <li><strong>Conocimiento de la Situación.</strong> Percepción individual de la información disponible y los elementos en el campo de combate necesarios para tomar decisiones acertadas.</li>
+                <li><strong>Consejo de Seguridad Nacional.</strong> Máximo órgano asesor del Presidente de la República para la toma de decisiones en materia de seguridad nacional, asesora al Presidente de la República en el proceso de formulación, implementación y seguimiento de políticas de seguridad nacional, con el objetivo de coordinar los esfuerzos de los Ministerios y otras entidades del Estado.</li>
+                <li><strong>Consolidación de la Paz.</strong> Acciones de estabilidad, predominantemente diplomáticas y económicas, que fortalecen y reconstruyen la infraestructura y las instituciones gubernamentales a fin de evitar una recaída en el conflicto. contingencia. Situación que requiere operaciones militares en respuesta a desastres naturales, terroristas, subversivos o como lo indique la autoridad apropiada para proteger los intereses de nacionales.</li>
+                <li><strong>Contingencia.</strong> Situación que requiere operaciones militares en respuesta a desastres naturales, terroristas, subversivos o como lo indique la autoridad apropiada para proteger los intereses de nacionales.</li>
+                <li><strong>Continuidad de las Operaciones.</strong> Grado o estado de duración o permanencia en la conducción de las funciones, tareas o deberes necesarios para cumplir una acción o misión militar en la ejecución de la Estrategia Militar Nacional contra el narcotráfico. Medidas activas tomadas para detectar, controlar y contrarrestar la producción, el tráfico y el uso de drogas ilegales.</li>
+                <li><strong>Contrainsurgencia.</strong> Esfuerzos civiles y militares realizados para derrotar una insurgencia y hacer frente a posibles daños importantes.</li>
+                <li><strong>Contraterrorismo.</strong> Conjunto de actividades ofensivas orientadas a neutralizar el terrorismo antes y después de que se haya llevado a cabo un atentado o acto hostil terrorista.</li>
+                <li><strong>Control Administrativo. </strong>Dirección o ejercicio de autoridad sobre las organizaciones subordinadas o de otro tipo con respecto a la administración y el apoyo incluyendo la organización de las unidades de la fuerza, el control de los recursos y el equipo, la gestión del estado mayor, la logística, y otros asuntos no incluidos en las misiones operacionales de los subordinados u otras organizaciones.</li>
+                <li><strong>Control Operacional.</strong> Autoridad para desempeñar funciones de mando sobre unidades o fuerzas subordinadas que incluyan organizar y emplear mandos y unidades, asignar tareas, designar objetivos y dar la dirección autorizada necesaria para cumplir la misión.</li>
+                <li><strong>Control Táctico. </strong>Autoridad sobre las unidades que se limita a la dirección detallada y el control de los movimientos o maniobras necesarios para cumplir con las misiones o tareas asignadas dentro del área de operaciones.</li>
+                <li><strong>Control. </strong>1. Autoridad ejercida por un comandante sobre parte de las actividades de organizaciones subordinadas u otras organizaciones que no están normalmente bajo su mando, que implica la responsabilidad de la ejecución de órdenes o directrices. 2. Autoridad que puede ser inferior al mando pleno ejercido por un comandante sobre una parte de las actividades de organizaciones subordinadas u otras.</li>
+                <li><strong>Cooperación en Seguridad.</strong> Toda interacción entre el Ministerio de Defensa Nacional a través del Comando General de las Fuerzas Militares y los organismos de defensa extranjeros, que tiene como objetivo crear relaciones que promueven intereses específicos en materia de defensa y seguridad, con el fin de desarrollar</li>
+                <li><strong>Coordinación Interagencial. </strong>Es la coordinación que ocurre entre los elementos del Ministerio de Defensa Nacional con los organismos y departamentos del Gobierno nacional comprometidos con el propósito de lograr un objetivo común correspondiente.</li>
+                <li><strong>Crisis.</strong> Un incidente o situación que implique una amenaza para el Estado, sus ciudadanos, fuerzas, o intereses vitales que se desarrolla rápidamente y crea una condición de tales diplomacias, importancia económica o militar de que el compromiso de las fuerzas y recursos militares contemplados para alcanzar los objetivos nacionales.</li>
+                <li><strong>Criterios de Culminación.</strong> Estándares especificados aprobados por el presidente de la República, que deben cumplirse antes de que se pueda concluir una operación conjunta.</li>
+                <li><strong>Culminación. </strong>Punto en el tiempo y/o en el espacio en el cual la operación no puede mantener el impulso por más tiempo.</li>
+                <li><strong>Curso de Acción. </strong>1. Cualquier secuencia de actividades que una persona o unidad pueda seguir. 2.Un esquema desarrollado para lograr una misión.</li>
+                <li><strong>Daño Colateral.</strong> Lesión o daño involuntario o incidental a personas u objetos que no serían objetivos militares legales en las circunstancias que rigen en ese momento.</li>
+                <li><strong>Defensa Nacional.</strong> Protección de la soberanía, el territorio, la población nacional y la infraestructura de defensa crítica de Colombia contra las amenazas externas y la agresión u otras amenazas según las indicaciones del presidente de la República.</li>
+                <li><strong>Delegación de Autoridad. </strong>Acción por la cual un comandante asigna parte de su autoridad, proporcional a la tarea asignada, a un comandante subordinado.</li>
+                <li><strong>Demostración de Fuerza.</strong> Operación planeada para demostrar la resolución del Gobierno Nacional que implica una mayor visibilidad de las fuerzas desplegadas en un intento de desactivar una situación específica que, si se permite continuar, puede ser perjudicial para los intereses u objetivos nacionales dentro de un comando conjunto, comando unificado subordinado o fuerza de tarea conjunta responsable de recomendar al comandante de la fuerza conjunta el empleo adecuado de unidades terrestres asignadas, agregadas y/o disponibles para la distribución de tareas terrestres; planeamiento y coordinación de operaciones terrestres; o ejecución de las misiones operacionales que se le asignen.</li>
+                <li><strong>Derecho de la Guerra.</strong> Parte del derecho internacional que trata de las relaciones entre los Estados que se encuentran en estado formal de guerra o llevando a cabo hostilidades reales en una guerra no declarada; constituye un vasto cuerpo de normas consuetudinarias y establecidas en los tratados. También se conoce como derecho de los conflictos armados.</li>
+                <li><strong>Derecho Operacional.</strong> Integración de los tratados internacionales ratificados por Colombia, la legislación nacional y la jurisprudencia en materia de Derechos Humanos y Derecho Internacional Humanitario al planeamiento, ejecución y seguimiento de las operaciones, operativos y procedimientos de la Fuerza Pública.</li>
+                <li><strong>Derrota en Detalle.</strong> Concentración de un poder de combate abrumador contra partes separadas de una fuerza, en lugar de derrotarla toda a la vez.</li>
+                <li><strong>Desarme. </strong>Reducción de un establecimiento militar (por ejemplo, el número de armas y tropas mantenidas por un estado) en algún nivel establecido por acuerdo internacional.</li>
+                <li><strong>Desintegrar. </strong>Interrumpir el sistema de mando y control del enemigo, degradando su capacidad para realizar operaciones mientras conduce un rápido colapso de sus capacidades o voluntad de lucha.</li>
+                <li><strong>Desplazar: </strong>Obligar a una fuerza enemiga a abandonar su posición actual o su eje de movimiento para reaccionar ante una acción específica.</li>
+                <li><strong>Destruir. </strong>Tarea táctica de la misión que físicamente hace ineficaz a una fuerza enemiga hasta que se reconstituye.</li>
+                <li><strong>Dirección Estratégica.</strong> Proceso y productos mediante los cuales el Presidente, el Ministro de la Defensa y el CDTFM le provee guía estratégica a Estado Mayor Conjunto, las Fuerzas, los comandantes de comandos conjuntos y las agencias de apoyo.</li>
+                <li><strong>Diseño Operacional. </strong>Es la concepción y construcción del marco que consolida una campaña u operación y su posterior ejecución, aplicando el pensamiento crítico y creativo, a fin de entender, visualizar, y describir problemas complejos asociados y establecer enfoques para su solución.</li>
+                <li><strong>Distribución del Espacio Aéreo.</strong> Determinación y asignación del esfuerzo total esperado, que se debe dedicar a las diversas operaciones aéreas durante un período de tiempo determinado, dado por porcentaje y/o prioridad.</li>
+                <li><strong>Disuasión. </strong>Es la prevención de la acción de un adversario mediante la presentación de una amenaza de contra reacción creíble que resultaría inaceptable enfrentar y/o la creencia de que su costo supera los beneficios percibidos.</li>
+                <li><strong>Doctrina Conjunta. </strong>Principios fundamentales que guían el empleo de las Fuerzas Militares de Colombia en acción coordinada hacia un objetivo común y puede incluir tácticas, técnicas, procedimientos y términos.</li>
+                <li><strong>Doctrina de Fuerza.</strong> Principios fundamentales que guían el trabajo de las unidades de una Fuerza en la acción coordinada hacia un objetivo común y puede incluir tácticas, técnicas, procedimientos y términos y símbolos.</li>
+                <li><strong>Doctrina Interfuerza. </strong>Principios, términos, tácticas, técnicas y procedimientos empleados y aprobados por dos o más Fuerzas.</li>
+                <li><strong>Doctrina Multinacional. </strong>Principios fundamentales que guían el trabajo de las Fuerzas de dos o más naciones en acción coordinada hacia un objetivo común.</li>
+                <li><strong>Dominio Aéreo. </strong>La atmósfera, que comienza en la superficie de la Tierra y se extiende hasta la altura donde sus efectos sobre las operaciones se hacen insignificantes.</li>
+                <li><strong>Dominio Espacial. </strong>Ambiente donde la radiación electromagnética, las partículas cargadas y los campos eléctricos y magnéticos son las influencias físicas dominantes; abarca la ionósfera y magnetósfera de la Tierra, el espacio interplanetario y la atmósfera solar.</li>
+                <li><strong>Dominio Marítimo. </strong>Los océanos, mares, bahías, estuarios, islas, zonas costeras y espacio aéreo por encima de estos, incluyendo los litorales.</li>
+                <li><strong>Dominio Terrestre. </strong>Área de la superficie de la Tierra que termina en el nivel del mar y se superpone con el dominio marítimo en el segmento de los litorales.</li>
+                <li><strong>Dominio.</strong> Construcción doctrinal empleada en la conducción de operaciones y campañas para describir, visualizar y caracterizar el ambiente.</li>
+                <li><strong>Economía de Fuerza.</strong> Empleo y distribución prudente de fuerzas para gastar el mínimo poder de combate esencial en los esfuerzos secundarios a fin de asignar el máximo poder de combate posible en el esfuerzo principal.</li>
+                <li><strong>Efecto. </strong>Estado físico y de comportamiento de un sistema que resulta de una acción, un conjunto de acciones u otro efecto.</li>
+                <li><strong>Ejercicio de Puesto de Mando.</strong> Ejercicio en el que se simulan las fuerzas, involucrando al comandante, el estado mayor y las comunicaciones dentro y entre comandos.</li>
+                <li><strong>Ejercicio.</strong> Maniobra militar o una operación simulada durante la guerra que involucra planeamiento, preparación y ejecución que se conduce con el propósito de entrenamiento y evaluación.</li>
+                <li><strong>Elemento Nacional de Apoyo.</strong> Cualquier organización o actividad nacional que apoye a las unidades nacionales que forman parte de una fuerza multinacional.</li>
+                <li><strong>En Apoyo de. </strong>Ayudar o proteger otra formación, unidad u organización mientras se permanece bajo control del comandante original.</li>
+                <li><strong>Encuentro Militar. </strong>Contacto y la interacción rutinaria entre individuos o elementos de las fuerzas militares con los de las fuerzas militares de otra nación, las autoridades civiles nacionales o extranjeras para crear confianza, compartir información y coordinar actividades mutuas.</li>
+                <li><strong>Encuentro. </strong>En defensa antiaérea, un ataque con armas de fuego o misiles aire-aire por un avión interceptor, o el lanzamiento de un misil de defensa anti-aérea por artillería de defensa antiaérea y la trayectoria subsecuente del misil para interceptarlo.</li>
+                <li><strong>Enemigo.</strong> Parte identificada como hostil contra la que se autoriza el uso de la fuerza.</li>
+                <li><strong>Enfoque Operacional.</strong> Es la descripción de las acciones generales que la fuerza debe ejecutar para transformar las condiciones actuales en aquellas deseadas en el estado final.</li>
+                <li><strong>Enfrentamiento.</strong> Conflicto táctico, usualmente entre niveles inferiores de maniobra opuestos.</li>
+                <li><strong>Enlace Directo Autorizado.</strong> Autoridad otorgada por un comandante (cualquier nivel) a un subordinado para consultar directamente o coordinar una acción con un comando o agencia dentro o fuera del comando que otorga.</li>
+                <li><strong>Enlazar. </strong>Relación de comportamiento, físico o funcional entre los nodos.</li>
+                <li><strong>Entorno Operacional.</strong> Un compuesto de las condiciones, circunstancias e influencias que afectan al empleo de capacidades y a las decisiones del comandante.</li>
+                <li><strong>Entrelazar.</strong> Término utilizado para describir la coordinación entre el estado mayor con los comandos superiores, adyacentes y subordinados.</li>
+                <li><strong>Entrenamiento de Reserva Activa.</strong> Entrenamiento autorizado realizado por un miembro del componente de reserva que no está en servicio activo, que consiste en concentraciones de entrenamiento de unidades programadas regularmente o concentraciones de entrenamiento adicionales autorizadas por la autoridad</li>
+                <li><strong>Enunciado de la Misión. </strong>Oración o párrafo corto que describe la tarea esencial, el propósito y la acción de la organización respondiendo a los interrogantes de quién, qué, cuándo, dónde y para qué.</li>
+                <li><strong>Equipo Rojo.</strong> Grupo independiente que desafía una organización para mejorar su efectividad; puede ayudar a un comandante y al estado mayor a pensar críticamente y creativamente, ver cosas desde perspectivas diferentes, desafiar su pensamiento, evitar las falsas expectativas, los prejuicios o el pensamiento grupal e impedir el uso de analogías inexactas para enmarcar el problema.</li>
+                <li><strong>Espacio Aéreo. </strong>Volumen sobre la superficie de la tierra en el que se ejerce control o soberanía; definido lateralmente por los límites de la unidad o estado que ejerce este control o soberanía y verticalmente este control se ejerce hasta la altura que permiten los medios disponibles.</li>
+                <li><strong>Establecimiento de la Paz.</strong> Proceso de diplomacia, mediación, negociación u otras formas de solución pacífica que ordena el final de una disputa y resuelve los problemas que la llevaron a ella.</li>
+                <li><strong>Estado Final.</strong> Conjunto de condiciones requeridas que define el logro de los objetivos del comandante.</li>
+                <li><strong>Estado Mayor Conjunto. </strong>1. El estado mayor del comandante de un comando conjunto, unidades conjuntas subordinadas, fuerzas de tarea conjuntas o un componente funcional subordinado (cuando el componente funcional emplee unidades de dos o más Fuerzas), que incluye miembros de las diferentes Fuerzas que componen la unidad. 2. (Escrito en mayúsculas) Se refiereal Estado Mayor bajo el mando del que lo asiste en sus responsabilidades y en el desempeño de sus funciones.</li>
+                <li><strong>Estandarización. </strong>Desarrollo e implementación de conceptos, doctrinas, procedimientos y diseños para lograr y mantener la compatibilidad, intercambiabilidad o similitud que son necesarios para alcanzar el nivel requerido de interoperabilidad, o para optimizar el uso de los recursos, en los campos de operaciones, material y administración.</li>
+                <li><strong>Estimación del comandante. </strong>La evaluación inicial del comandante en la que las opciones son en una declaración concisa que define quién, qué, cuándo, dónde, por qué y cómo el curso de acción se implementará.</li>
+                <li><strong>Estimación Estratégica. </strong>La amplia gama de factores estratégicos que influyen en la comprensión del entorno operativo y la determinación de las misiones, objetivos y cursos de acción. </li>
+                <li><strong>Estimación. </strong>1. Un análisis de una situación, desarrollo o tendencia extranjera que identifique sus elementos principales, interpreta la importancia, y evalúa las posibilidades futuras y los resultados prospectivos de las diversas acciones que podrían tomarse. 2. Una evaluación de la capacidades, vulnerabilidades y posibles cursos de acción de una nación extranjera o una combinación de naciones como consecuencia de un plan nacional específico, política, decisión ocurso de acción contemplado. 3. Un análisis de un en relación con la situación en la que se lleva a cabo o se llevaría a cabo para identificar y evaluar los factores disponibles, así como los activos y posibles obstáculos necesarios, logros y consecuencias.</li>
+                <li><strong>Estrategia de Seguridad Nacional.</strong> Documento aprobado por el Presidente de la República para desarrollar, aplicar y coordinar los instrumentos de poder nacional en el logro de los objetivos que contribuyan a la seguridad nacional.</li>
+                <li><strong>Estrategia del Teatro.</strong> Construcción general que esboza la visión del comandante de un comando conjunto para integrar y sincronizar las actividades y operaciones militares con los otros instrumentos del poder nacional con el fin de cumplir los objetivos estratégicos nacionales.</li>
+                <li><strong>Estrategia Militar Nacional. </strong>Documento aprobado por el comandante general de las Fuerzas Militares para distribuir y aplicar el poder militar con el fin de cumplir la Estrategia de Seguridad Nacional y los objetivos de la Estrategia de Defensa Nacional.</li>
+                <li><strong>Estrategia. </strong>Una idea prudente o un conjunto de ideas para emplear los instrumentos del poder nacional de forma sincronizada e integrada para alcanzar objetivos del teatro, nacionales y/o multinacionales.</li>
+                <li><strong>Evaluación de Combate.</strong> Determinación de la efectividad general del empleo de la fuerza durante las operaciones militares, a través de la evaluación de daños en combate, la evaluación de la efectividad de las municiones y la recomendación de blancos futuros.</li>
+                <li><strong>Evaluación de Daños en Combate.</strong> Estimación de daños compuesta por la evaluación del daño físico y funcional, así como la evaluación del sistema de blancos, como resultado de la aplicación de la fuerza militar letal o no letal.</li>
+                <li><strong>Evaluación de la Efectividad de las Municiones.</strong> Estimación sobre la evaluación de la fuerza militar aplicada en términos del sistema de armas y la efectividad de las municiones para determinar y recomendar cualquier cambio requerido a la metodología, táctica, sistema de armas, municiones, fusiones y/o parámetros de entrega de armas para aumentar la efectividad de la fuerza, realizada por los responsables de operaciones, con los insumos y la coordinación requeridos por parte de la comunidad de inteligencia, simultánea e interactivamente con la evaluación de daños en combate.</li>
+                <li><strong>Evaluación Operacional.</strong> Proceso continuo que apoya la toma de decisiones midiendo el progreso hacia el cumplimiento de una tarea, creando un efecto, logrando un objetivo o alcanzando un estado final militar.</li>
+                <li><strong>Evaluar. </strong>1. Medir el progreso en el cumplimiento de una tarea o misión, de la creación de un efecto o del logro de un objetivo. 2. Proceso continuo que mide la efectividad general del empleo de capacidades durante las operaciones militares.</li>
+                <li><strong>Evaluar. </strong>1. Medir el progreso en el cumplimiento de una tarea o misión, de la creación de un efecto o del logro de un objetivo. 2.Proceso continuo que mide la efectividad general del empleo de capacidades durante las operaciones militares.</li>
+                <li><strong>Fase.</strong> Etapa definitiva de una operación o campaña en el planeamiento de una operación conjunta, durante la cual una gran parte de las fuerzas y capacidades están involucradas en actividades similares o de apoyo mutuo para un propósito común.</li>
+                <li><strong>Fasear.</strong> Forma de ejecutar una operación conjunta compleja dividiéndola en partes manejables.</li>
+                <li><strong>Fuegos Conjuntos.</strong> Fuegos entregados durante el empleo de unidades de dos o más Fuerzas, en acción coordinada, para producir efectos deseados en apoyo de un objetivo común.</li>
+                <li><strong>Fuerza Conjunta.</strong> Término general empleado para referirse a una unidad conjunta sin especificar un escalón en particular.</li>
+                <li><strong>Fuerza de Tarea Conjunta.</strong> Unidad conjunta constituida y designada por el comandante general de las Fuerzas Militares, un comandante de comando conjunto, un comandante unificado subordinado e incluso, en caso de ser necesario y con la aprobación del escalón inmediatamente superior, por un comandante de una fuerza de tarea conjunta existente.</li>
+                <li><strong>Fuerza Expedicionaria.</strong> Fuerza armada organizada para alcanzar un objetivo específico en un país extranjero.</li>
+                <li><strong>Fuerza Multinacional.</strong> Fuerza compuesta por elementos militares de naciones que han formado una alianza o coalición para algún propósito específico.</li>
+                <li><strong>Fuerza.</strong> 1. Uno de los componentes del Comando General de las Fuerzas Militares (Ejército, Armada o Fuerza Aérea). 2. (en minúscula) se refiere a una unidad militar en términos generales sin especificar escalón o especialidad. 3. Una agregación de personal militar, sistemas de armas, equipo y apoyo necesario, o una combinación de los mismos. 4. Una gran subdivisión de una flota.</li>
+                <li><strong>Fuerzas Militares de Colombia.</strong> Término usado para denotar colectivamente todos los componentes del Ejército, Armada y Fuerza Aérea.</li>
+                <li><strong>Fuerzas Transitorias. </strong>Fuerzas que pasan, transitan o establecen una base temporal dentro del área de operaciones de otro comando pero que no están bajo su control operacional.</li>
+                <li><strong>Función Conducción de la Guerra Sostenimiento.</strong> Conjunto de tareas y sistemas relacionados entre sí, para proporcionar apoyo y servicios que aseguran la libertad de acción, extienden el alcance operacional y prolongan la resistencia.</li>
+                <li><strong>Función de Conducción de la Guerra Comando y Control. </strong>Conjunto de tareas y sistemas relacionados entre sí, que le permiten al comandante balancear el arte del mando y la ciencia del control para integrar las otras funciones de conducción de la guerra.</li>
+                <li><strong>Función de Conducción de la Guerra Fuegos.</strong> Conjunto de tareas y sistemas relacionados entre sí, que proveen el uso colectivo y coordinado de los fuegos conjuntos, mediante el proceso de selección y priorización de blancos.</li>
+                <li><strong>Función de Conducción de la Guerra Inteligencia. </strong>Conjunto de tareas y sistemas relacionados entre sí, que facilitan la comprensión del enemigo, el terreno, las condiciones del clima y las consideraciones civiles.</li>
+                <li><strong>Función de Conducción de la Guerra Mando y Control. </strong>Conjunto de tareas y sistemas relacionados entre sí, que le permiten al comandante balancear el arte del mando y la ciencia del control para integrar las otras funciones de conducción de la guerra.</li>
+                <li><strong>Función de Conducción de la Guerra Movimiento y Maniobra. </strong>Conjunto de tareas y sistemas relacionados entre sí que mueven y emplean las fuerzas para ganar una posición de ventaja relativa sobre el enemigo y otras amenazas.</li>
+                <li><strong>Función de Conducción de la Guerra Protección.</strong> Conjunto de tareas y sistemas relacionados entre sí, que preservan la fuerza para que los comandantes puedan aplicar el máximo poder de combate en el cumplimiento de la misión.</li>
+                <li><strong>Función de Conducción de la Guerra. </strong>Conjunto de tareas y sistemas (personas, organización, información y procesos) unidos por un propósito común que los comandantes utilizan para cumplir misiones y objetivos de entrenamiento.</li>
+                <li><strong>Función.</strong> Agrupación práctica de tareas y sistemas (personas, organizaciones, información y procesos) unidos por un propósito común.</li>
+                <li><strong>Funciones Conjuntas.</strong> Capacidades y actividades relacionadas ubicadas en seis grupos básicos de control, información, inteligencia, movimiento y maniobra, protección y sostenimiento para ayudar a los comandantes de las fuerzas conjuntas a sincronizar, integrar y operaciones conjuntas directas.</li>
+                <li><strong>Funciones de Conducción de la Guerra.</strong> Conjunto de tareas y sistemas (personas, organización, información y procesos) unidos por un propósito común que los comandantes utilizan para cumplir misiones y objetivos de entrenamiento.</li>
+                <li><strong>Gestión de Batalla en el Espectro Electromagnético.</strong> Monitoreo dinámico, evaluación, planificación y dirección de operaciones conjuntas de espectro electromagnético en apoyo del esquema de maniobra del comandante.</li>
+                <li><strong>Gestión de la Información.</strong> Administración y empleo eficiente de procedimientos y sistemas de información para recolectar, guardar, procesar, mostrar, diseminar y proteger datos, información y productos derivados del conocimiento.</li>
+                <li><strong>Golpe. </strong>Un ataque para dañar o destruir un objetivo o una capacidad.</li>
+                <li><strong>Grupo Conjunto de Coordinación de Blancos.</strong> Grupo formado por el comandante de la fuerza conjunta para cumplir amplias funciones de vigilancia de blancos que pueden incluir, entre otras, coordinar la información de los blancos, proporcionar la guía de blancos, sincronización y prioridades y refinar la lista de prioridades de blancos integrada conjunta.</li>
+                <li><strong>Grupo de Coordinación Interagencial Conjunto.</strong> Grupo de personal que establece relaciones de trabajo regulares, oportunas y colaborativas entre civiles y responsables del planeamiento operacionales militares.</li>
+                <li><strong>Guerra Convencional. </strong>Amplio espectro de operaciones militares realizadas contra un adversario por fuerzas militares tradicionales u otras fuerzas de seguridad gubernamentales que no incluyen armas químicas, biológicas, radiológicas o nucleares.</li>
+                <li><strong>Guerra Irregular.</strong> Lucha violenta entre actores estatales y no estatales por su legitimidad e influencia sobre una población relevante.</li>
+                <li><strong>Guerra no convencional. </strong>Actividades realizadas para permitir un movimiento de resistencia o insurgencia para coaccionar, perturbar o derrocar a un gobierno u poder ocupante operando a través o con una fuerza subterránea, auxiliar y guerrillera en un área denegada.</li>
+                <li><strong>Guerra Tradicional.</strong> Confrontación entre estados-nación o coaliciones.</li>
+                <li><strong>Guía de Cooperación en Seguridad.</strong> Documento base para todas las actividades internacionales del Ministerio de Defensa Nacional, elaborado por el comandante general de las Fuerzas Militares y aprobado por el ministro de Defensa que establece las directrices de cooperación en seguridad para todas las Fuerzas, los CCON, los comandos funcionales y las dependencias del ministerio enlazando las funciones y actividades con la Estrategia de Defensa Nacional.</li>
+                <li><strong>Guía de Planeamiento para Contingencias. </strong>Es un documento elaborado por el comandante general de las Fuerzas Militares y aprobado por el ministro de Defensa y el Presidente de la República, que orienta la Estrategia de Seguridad Nacional y la guía de planeamiento de defensa y es el principal documento de referencia para el plan conjunto de capacidades estratégicas.</li>
+                <li><strong>Guía para el Empleo de la Fuerza. </strong>Documento que proporciona un planeamiento completo a corto plazo fusionando la Guía de Planeamiento para Contingencias y la Guía de Cooperación en Seguridad.</li>
+                <li><strong>Identificación de Combate.</strong> Proceso de lograr una caracterización precisa de los objetos detectados en el ambiente operacional suficiente para respaldar una decisión de enfrentamiento.</li>
+                <li><strong>Imposición de la Paz.</strong> Aplicación de la fuerza militar, o la amenaza de su uso, normalmente de acuerdo con la autorización internacional, para obligar al cumplimiento de resoluciones o sanciones destinadas a mantener o restablecer la paz y el orden.</li>
+                <li><strong>Imposición de Sanciones. </strong>Operaciones que emplean medidas coercitivas para controlar el movimiento de ciertos tipos de artículos designados dentro o fuera de una nación o área específica.</li>
+                <li><strong>Incursión.</strong> Operación para capturar temporalmente un área con el fin de asegurar información, confundir al enemigo, capturar personal o equipo, o destruir una capacidad que culmina con una retirada planeada.</li>
+                <li><strong>Indicador. </strong>En el contexto de la evaluación de la operación, es una información específica que infiere la condición, el estado o la existencia de algo y que proporciona un medio confiable para determinar el rendimiento o la efectividad.</li>
+                <li><strong>Información Geoespacial.</strong> Información que identifica la ubicación geográfica y características de las características naturales o construidas y los límites en la Tierra, incluyendo: datos estadísticos e información derivada, entre otras cosas, de la teledetección, tecnologías de mapeo y topografía; y mapeo, gráficos, datos geodésicos y productos.</li>
+                <li><strong>Instrumentos de Poder Nacional. </strong>Todos los medios disponiblespara el gobierno en la consecución de los objetivos nacionales; se expresan como diplomáticos, económicos, informativos y militares.</li>
+                <li><strong>Integración. </strong>1. (Referente a protección de la Fuerza) transferencia sincronizada de unidades a una fuerza de un comandante operacional antes de la ejecución de la misión. 2. Disposición de unidades militares y sus acciones para crear una fuerza</li>
+                <li><strong>Inteligencia de Identidad.</strong> Inteligencia que resulta del procesamiento de atributos de identidad con respecto a individuos, grupos, redes o poblaciones de interés.</li>
+                <li><strong>Inteligencia Estratégica.</strong> Inteligencia necesaria para la formación de planes políticos y militares a nivel nacional e internacional.</li>
+                <li><strong>Intención del Comandante. </strong>Expresión clara y concisa del propósito de la operación y el estado final militar deseado que apoya el mando tipo misión, proporciona enfoque al estado mayor y ayuda a los comandantes subordinados y de apoyo a actuar para lograr los resultados deseados por el comandante sin más órdenes, incluso cuando la operación no se desarrolla según lo planeado.</li>
+                <li><strong>Intención del Comandante. </strong>Una expresión clara y concisa del propósito de la operación y el estado final militar deseado que apoya el comando de la misión, proporciona enfoque al personal, y ayuda a los comandantes subordinados y de apoyo a actuar para lograr los resultados deseados sin más órdenes, incluso cuando la operación no se despliega como planeado.</li>
+                <li><strong>Intercambiabilidad.</strong> Capacidad de un producto, proceso o servicio de ser utilizado en lugar de otro cumpliendo los mismos requisitos.</li>
+                <li><strong>Interdicción Aérea.</strong> Operaciones aéreas realizadas para desviar, interrumpir, retrasar o destruir la capacidad militar de superficie del enemigo antes de que pueda ser utilizada efectivamente contra fuerzas amigas o para cumplir sus objetivos que se conducen a tal distancia de las fuerzas amigas que no es necesaria la integración de cada misión aérea con el fuego y movimiento</li>
+                <li><strong>Interdicción de Drogas.</strong> Continuo de eventos enfocados en la interrupción del tráfico de drogas ilegales por aire, mar o tierra, o de las sustancias usadas para su fabricación.</li>
+                <li><strong>Interdicción. </strong>Acción para desviar, interrumpir, retrasar o destruir la capacidad militar de superficie del enemigo antes de que pueda ser utilizada efectivamente contra fuerzas amigas o para cumplir sus objetivos.</li>
+                <li><strong>Interoperabilidad de Fuerza.</strong> Capacidad de las fuerzas de dos o más naciones para entrenarse, ejercitarse y operar de manera efectiva juntas en la ejecución de misiones y tareas asignadas.</li>
+                <li><strong>Interoperabilidad Militar. </strong>La capacidad de las fuerzas militares para entrenar, ejercitar y operar de manera efectiva juntas en la ejecución de misiones y tareas asignadas.</li>
+                <li><strong>Interoperabilidad.</strong> 1. Capacidad de operar en sinergia en la ejecución de las tareas asignadas. 2. Condición lograda entre los sistemas de comunicaciones electrónicas o elementos de equipos de comunicaciones electrónicas cuando la información o las Fuerzas pueden intercambiarse directa y satisfactoriamente entre ellos y/o sus usuarios.</li>
+                <li><strong>Interoperabilidad.</strong> Capacidad de operar en sinergia en la ejecución de las tareas asignadas.</li>
+                <li><strong>Intervención Militar. </strong>El acto deliberado de una nación o un grupo de naciones para introducir sus fuerzas militares en el curso de una controversia existente.</li>
+                <li><strong>Juego de Guerra. </strong>Proceso disciplinado, con reglas y pasos que intentan visualizar el flujo de la operación.</li>
+                <li><strong>Liderazgo. </strong>Capacidad de influir en las personas, proporcionando dirección, propósito y motivación para cumplir la misión y mejorar la organización.</li>
+                <li><strong>Límite. </strong>Línea que delimita las áreas de superficie con el propósito de facilitar la coordinación y prevenir conflictos entre unidades en operaciones, formaciones o áreas adyacentes.</li>
+                <li><strong>Línea de Esfuerzo.</strong> Secuencia que enlaza múltiples tareas y misiones usando la lógica de propósito, causa y efecto, enfocando los esfuerzos hacia el establecimiento de condiciones operacionales y estratégicas.</li>
+                <li><strong>Línea de Operaciones. </strong>Secuencia que define la orientación de direccional de la unidad en el tiempo y el espacio en relación con el enemigo y la vincula con la base de operaciones y objetivos.</li>
+                <li><strong>Líneas Interiores.</strong> Secuencias sobre las que opera una fuerza cuando sus operaciones divergen de un punto central.</li>
+                <li><strong>Limitaciones operacionales.</strong> Acciones requeridas o prohibidas por la autoridad superior y otras restricciones que limitan la libertad de acción del comandante, como los acuerdos diplomáticos, políticos y económicos, las condiciones en los países afectados y en la nación socia y los problemas de la nación anfitriona</li>
+                <li><strong>Logística.</strong> Planeamiento y ejecución del movimiento y el apoyo de las fuerzas.</li>
+                <li><strong>Lucha Contra el Terrorismo.</strong> Acciones, incluido el antiterrorismo y el contraterrorismo, ejecutadas para combatir el terrorismo en todo el espectro de amenazas.</li>
+                <li><strong>Mando Conjunto.</strong> Autoridad de mando sólo sobre las fuerzas asignadas que están bajo su autoridad y no puede ser delegado o transferido.</li>
+                <li><strong>Mando tipo misión. </strong>Filosofía de mando y función de conducción de la guerra para el Ejército, que permite conducir operaciones de manera efectiva para vencer en ambientes volátiles, inciertos, complejos y ambiguos.</li>
+                <li><strong>Mando y Control.</strong> Ejercicio de autoridad y dirección por un comandante debidamente nombrado sobre las fuerzas asignadas y agregadas en el cumplimiento de la misión.</li>
+                <li><strong>Mando. </strong>1. Autoridad que un comandante de las fuerzas militares ejerce legalmente sobre los subordinados en virtud de grado o cargo. 2. Orden dada por un comandante; es decir, la voluntad del comandante expresada, con el propósito de llevar a cabo una acción particular.</li>
+                <li><strong>Maniobra. </strong>1. Empleo de las fuerzas en el área de operaciones a través de la combinación de movimiento con los fuegos para lograr una posición de ventaja con respecto al enemigo. 2. Operación de un barco, aeronave o vehículo para hacer que realice los movimientos deseados. 3.Movimiento para ubicar naves, aeronaves o fuerzas terrestres en una posición de ventaja sobre el enemigo.</li>
+                <li><strong>Matriz de Eventos. </strong>Una descripción cruzada de los indicadores y la actividad ocurren en cada área de interés nombrada.</li>
+                <li><strong>Mecanismo de Derrota.</strong> Método mediante el cual las fuerzas amigas cumplen su misión contra la oposición del enemigo.</li>
+                <li><strong>Medida de Coordinación de Apoyo de Fuegos.</strong> Medida empleada por los comandantes para facilitar el rápido ataque a los blancos y al mismo tiempo proporcionar medidas de seguridad para las propias tropas.</li>
+                <li><strong>Medidas de Desempeño.</strong> Indicadores que se utilizan para evaluar las acciones propias vinculadas a la medición del cumplimiento de la tarea.</li>
+                <li><strong>Medidas de Eficacia.</strong> Indicadores utilizados para ayudar a medir un estado actual del sistema, con un cambio indicado al comparar múltiples observaciones a lo largo del tiempo para medir el cumplimiento de los objetivos y de los estados finales.</li>
+                <li><strong>Meteorológico y Oceanográfico.</strong> Un término utilizado para transmitir todos los factores ambientales, desde el sub-fondo de los océanos de la Tierra a través de áreas marítimas, terrestres, ionosfera, y hacia el exterior en el espacio.</li>
+                <li><strong>Misión. </strong>1. Tarea (el qué), junto con el propósito (para qué), que indica claramente la acción por realizar y la razón para esta. 2. El envío de uno o más aeronaves para cumplir una tarea en particular.</li>
+                <li><strong>Muestra de fuerza</strong> Una operación planeada para demostrar la resolución de los Estados Unidos que implica mayor visibilidad de las fuerzas desplegadas de los Estados Unidos en un intento de desactivar una situación que, si se permite continuar, puede ser perjudicial para los intereses del Estado u objetivos nacionales. </li>
+                <li><strong>Nación Asociada. </strong>Nación con la que la República de Colombia trabaja en una situación u operación específica.</li>
+                <li><strong>Negación de Área.</strong> Acción, actividad o capacidad, generalmente de corto alcance, diseñada para limitar la libertad de acción de una fuerza enemiga dentro de un área operacional.</li>
+                <li><strong>Neutral.</strong> Parte identificada como aquella que ni apoya ni se opone a las fuerzas amigas o enemigas.</li>
+                <li><strong>Neutralidad. </strong>En el derecho internacional, la actitud de imparcialidad durante los períodos de guerra adoptada por terceros estados hacia una parte beligerante y posteriormente reconocida por el beligerante, que crea derechos y deberes entre los estados imparciales y el beligerante.</li>
+                <li><strong>Neutralizar. </strong>1. Hacer que el personal o el material enemigo sea incapaz de interferir con una operación en particular. 2. Hacer inofensivo cualquier elemento contaminado con un agente químico.</li>
+                <li><strong>Nivel Estratégico de Guerra.</strong> El nivel de guerra en el que una nación, a menudo como miembro de un grupo de naciones, determina las objetivos y orientación de seguridad, luego desarrolla y utiliza los recursos nacionales para lograr esos objetivos</li>
+                <li><strong>Nivel Operacional.</strong> Nivel de la guerra en el que se planean, conducen y sostienen campañas y operaciones mayores para cumplir los objetivos estratégicos dentro de teatros y otras áreas operacionales.</li>
+                <li><strong>Nivel Táctico. </strong>Nivel de guerra en el que se planean y ejecutan batallas y encuentros para alcanzar objetivos militares asignados a unidades tácticas o fuerzas de tarea.</li>
+                <li><strong>Niveles de la guerra. </strong>Marco para definir y clarificar la relación entre los objetivos nacionales, el enfoque operacional y las tareas tácticas.</li>
+                <li><strong>No Proliferación. </strong>Uso de capacidades militares junto con un esfuerzo de todo el gobierno, y dentro de las autoridades legales de un estado, para disuadir e impedir la adquisición de armas de destrucción masiva disuadiendo o impidiendo el acceso o distribución de tecnologías sensibles, material y experiencia por y entre los actores de interés estatales y no estatales.</li>
+                <li><strong>Nodo. </strong>1. En un sistema de movilidad el punto desde donde se origina, se procesa o se termina un requerimiento de movimiento. 2. En comunicaciones y sistemas informáticos, la ubicación física que proporciona servicios de terminación, conmutación y acceso de enlace para respaldar el intercambio de datos. 3. Un elemento de un sistema que representa a una persona, lugar u objeto físico.</li>
+                <li><strong>Nodo. </strong>1. En un sistema de movilidad el punto desde donde se origina, se procesa o se termina un requerimiento de movimiento. 2. En comunicaciones y sistemas informáticos, la ubicación física que proporciona servicios de terminación, conmutación y acceso de enlace para respaldar el intercambio de datos. 3. Un elemento de un sistema que representa a una persona, lugar u objeto físico o futuros conflictos.</li>
+                <li><strong>Ocupación Militar.</strong> Condición en la cual el territorio está bajo el control de una fuerza armada extranjera.</li>
+                <li><strong>Operación Conjunta.</strong> Término general para describir las acciones militares conducidas por las fuerzas conjuntas y aquellas unidades de las Fuerzas bajo relaciones de mando especificas entre sí.</li>
+                <li><strong>Operación Conjunta.</strong> Término general para describir las acciones militares conducidas por las fuerzas conjuntas y aquellas unidades de las Fuerzas bajo relaciones de mando especificas entre sí.</li>
+                <li><strong>Operación Contraaérea Ofensiva.</strong> Se refiere a las operaciones ofensivas para destruir, interrumpir o neutralizar aviones enemigos, misiles, plataformas de lanzamiento y sus estructuras y sistemas de apoyo tanto antes como después del lanzamiento, y tan cerca de su fuente como sea posible</li>
+                <li><strong>Operación Contraaérea. </strong>Una operación contraaérea es una operación aérea dirigida contra la capacidad ofensiva y defensiva del enemigo para alcanzar y mantener un grado deseado de superioridad aérea.</li>
+                <li><strong>Operación de Contingencia. </strong>Operación militar de pequeña escala de duración limitada o una parte significativa de una operación mayor de duración prolongada que implique combate, cuyos objetivos estratégicos y operacionales generales asocia- dos son proteger los intereses nacionales y prevenir ataques sorpresivos o futuros conflictos.</li>
+                <li><strong>Operación de Contingencia.</strong> Operación militar de pequeña escala de duración limitada o una parte significativa de una operación mayor de duración prolongada que implique combate, cuyos objetivos estratégicos y operacionales generales asociados son proteger los intereses nacionales y prevenir ataques sorpresivos</li>
+                <li><strong>Operación Mayor. </strong>Serie de acciones tácticas tales como batallas, enfrentamientos, combates, golpes, conducidas por unidades de combate de una o varias fuerzas, coordinadas en tiempo y lugar, para alcanzar objetivos estratégicos u operacionales en un área de operaciones.</li>
+                <li><strong>Operación Multinacional. </strong>Acción militar ejecutada por fuerzas de dos o más naciones, generalmente emprendidas dentro de la estructura de una coalición o alianza.</li>
+                <li><strong>Operación. </strong>1. Secuencia de acciones tácticas con un propósito común o un tema unificador. 2. Acción militar o la ejecución de una misión militar estratégica, operacional, táctica, de Fuerza, de entrenamiento o administrativa.</li>
+                <li><strong>Operaciones Apoyo a la Información Militar.</strong> Actividades relacionadas con el empleo integrado de las capacidades de guerra electrónica, operaciones de redes informáticas, operaciones de apoyo a la información militar, engaño militar y operaciones de seguridad, para generar condiciones de éxito y prevalecer en el ambiente de información militar.</li>
+                <li><strong>Operaciones Cívico-Militares.</strong> Actividades de un comandante realizadas por militares designados fuerzas que establecen, mantienen, influyen o explotan las relaciones entre las fuerzas militares y las poblaciones e instituciones indígenas apoyando directamente el logro de objetivos relacionados con el restablecimiento o el mantenimiento de la estabilidad dentro de una región o nación anfitriona.</li>
+                <li><strong>Operaciones Conjuntas en el Espectro Electromagnético.</strong> Actividades que incluyen tanto operaciones de guerra electrónica y como de gestión conjunta del espectro electromagnético utilizadas para explorar, atacar, proteger y gestionar el ambiente operacional electromagnético con el fin de cumplir los objetivos del comandante.</li>
+                <li><strong>Operaciones Conjuntas. </strong>Acciones militares llevadas a cabo por fuerzas conjuntas y esas fuerzas del Servicio en relaciones de mando especificadas entre sí, que de sí mismos, no establecer fuerzas conjuntas. </li>
+                <li><strong>Operaciones Contra el Narcotráfico.</strong> Acciones civiles o militares ejecutadas para reducir o eliminar el tráfico ilícito de drogas.</li>
+                <li><strong>Operaciones de Información.</strong> Empleo integrado, durante las operaciones militares, de las capacidades relacionadas con la información en coordinación con otras líneas de operación para influir, interrumpir, corromper o desarticular la toma de decisiones de adversarios y posibles adversarios mientras protegemos la nuestra.</li>
+                <li><strong>Operaciones de Libertad de Navegación.</strong> Operaciones conducidas para proteger la navegación, el sobrevuelo y los intereses nacionales relacionados en, bajo y sobre los mares.</li>
+                <li><strong>Operaciones de Mantenimiento de Paz.</strong> Operaciones militares realizadas con el consentimiento de las principales partes en una disputa, diseñadas para monitorear y facilitar la implementación de un acuerdo (cese del fuego, tregua u otro tipo de acuerdo) y apoyar los esfuerzos diplomáticos para alcanzar un acuerdo político a largo plazo.</li>
+                <li><strong>Operaciones de Paz.</strong> Término amplio que abarca la respuesta a crisis y operaciones de contingencia limitada multinacional e interinstitucional, que involucran todos los instrumentos de poder nacional con misiones militares para contener conflictos, reparar la paz y configurar el ambiente para apoyar la reconciliación y reconstrucción y facilitar la transición a un gobierno</li>
+                <li><strong>Operaciones en el Ciberespacio.</strong> Empleo de capacidades del ciberespacio con el propósito principal de alcanzar objetivos en o a través este.</li>
+                <li><strong>Operaciones Especiales.</strong> Operaciones que requieren modos de empleo, técnicas tácticas, equipos y entrenamiento únicos que a menudo se conducen en ambientes hostiles, negados o políticamente sensibles y que se caracterizan por una o más de las siguientes características. Tiempo limitado, encubierto, poca visibilidad, conducido con y/o a través de las fuerzas locales, que requieren experiencia regional, y/o un alto grado de riesgo.</li>
+                <li><strong>Operaciones Urbanas Conjuntas. </strong>Operaciones conjuntas planeadas y conducidas en o contra objetivos dentro de un ambiente topográfico complejo y su terreno natural adyacente, donde la construcción artificial o la densidad de población son las características dominantes.</li>
+                <li><strong>Orgánico.</strong> Que conforma y hace parte esencial de una organización militar de acuerdo con su tabla de organización para el Ejército, la Fuerza Aérea y la Armada.</li>
+                <li><strong>Organización por Tareas.</strong> Acción de diseñar una unidad operacional, estado mayor de apoyo o paquete de sostenimiento de un tamaño y composición específicos para cumplir una única tarea o misión.</li>
+                <li><strong>Orientación Estratégica de Defensa.</strong> Un documento aprobado por el Ministro de Defensa para las Fuerzas Militares del Estado en coordinación con el Estado y otros instrumentos de poder nacional para lograr la seguridad nacional objetivos estratégicos.</li>
+                <li><strong>Orientación Estratégica.</strong> Los productos escritos por los cuales el presidente, Ministro de Defensa, y el Comandante de las Fuerzas Militares proporcionan dirección estratégica</li>
+                <li><strong>Panorama Operacional Común.</strong> Despliegue integrado de información relevante dentro del área de interés de un comandante, adaptado a requerimientos de nidos y basado en datos e información comunes que comparten más de un comando.</li>
+                <li><strong>Peligro.</strong> Condición con el potencial de causar lesiones, enfermedades o muerte de personal; daño o pérdida de equipo o propiedad; o degradación de la misión.</li>
+                <li><strong>Plan de Contingencia.</strong> Es una secuela de los planes de campaña del teatro y de los planes de campaña funcionales, especialmente elaborados para enfrentar amenazas específicas, eventos catastróficos y misiones contingentes sin un plan de crisis a mano.</li>
+                <li><strong>Plan Unificado de Comandos Conjuntos.</strong> Documento elaborado por el Comando General de las Fuerzas Militares y aprobado por el Presidente de la República, que establece directrices básicas para todos los comandantes de comandos conjuntos; establece sus misiones, responsabilidades y estructura de fuerza; delinea el área geográfica general de responsabilidad de los comandos conjuntos; y especifica las responsabilidades de los comandos funcionales.</li>
+                <li><strong>Planeamiento Conjunto.</strong> Es el proceso deliberado de determinar cómo (formas) emplear las capacidades militares (medios) en el tiempo y el espacio para cumplir los objetivos (fines) mientras se consideran los riesgos asociados.</li>
+                <li><strong>Planeamiento de Apoyo.</strong> Se conduce simultáneamente con el planeamiento de fuerza para determinar la secuencia logística y el personal de acuerdo con el concepto operacional.</li>
+                <li><strong>Planeamiento Integrado.</strong> Sincroniza recursos e integra líneas de tiempo, matrices de decisión y autoridades en todos los CCON, en el resto de los asociados interagenciales y en multinacionales para cumplir objetivos estratégicos dirigidos.</li>
+                <li><strong>Planeamiento Operacional.</strong> Traduce los conceptos del comandante en actividades ejecutables, operaciones y campañas, dentro de los recursos, las políticas y las limitaciones nacionales para cumplir los objetivos.</li>
+                <li><strong>Planear. </strong>Arte y ciencia de entender una situación de manera prospectiva para visualizar el futuro deseado y trazar formas eficaces a fin de conseguirlo.</li>
+                <li><strong>Plantilla de Evento.</strong> Una guía para la planificación de la colección que representa las áreas de interés nombradas donde la actividad, o su falta de actividad, indicarán qué curso de acción el adversario ha adoptado.</li>
+                <li><strong>Plantilla de Situación. </strong>Una representación de las supuestas disposiciones adversarias, basada en que método de operaciones preferidos por el adversario y el impacto del ambiente si el adversario debe adoptar un curso de acción particular.</li>
+                <li><strong>Poder de Combate. </strong>Total de medios y de capacidades destructivas, constructivas y de información que una unidad o formación militar puede aplicar en un momento dado preparación de inteligencia conjunta del ambiente operacional. Proceso analítico utilizado por las organizaciones conjuntas de inteligencia para producir apreciaciones y otros productos de inteligencia en apoyo del proceso de toma de decisiones del comandante de la fuerza conjunta.</li>
+                <li><strong>Política Nacional. </strong>Curso de acción o enunciado de guía amplio adoptada por el gobierno a nivel nacional para alcanzar objetivos nacionales.</li>
+                <li><strong>Políticas.</strong> Orientaciones o directrices que rigen la actuación de una persona o entidad en un asunto o campo determinado por una fuente de fuerza externa.</li>
+                <li><strong>Preparación de Inteligencia Conjunta del Ambiente Operacional.</strong> Proceso analítico utilizado por las organizaciones conjuntas de inteligencia para producir apreciaciones y otros productos de inteligencia en apoyo del proceso de toma de decisiones del comandante de la fuerza conjunta.</li>
+                <li><strong>Preparación para Emergencias.</strong> Medidas tomadas antes de una emergencia para reducir la pérdida de vidas y bienes; y para proteger las instituciones de un país de todo tipo de peligros a través de un programa integral de gestión de emergencias que incluye preparación, mitigación, respuesta y recuperación.</li>
+                <li><strong>Prevención de conflictos.</strong> Operación de paz que emplea medios diplomáticos, civiles y, cuando sea necesario militares, complementarios para supervisar e identificar las causas del conflicto y emprender acciones oportunas para prevenir la aparición, la escalada o la reanudación de las hostilidades.</li>
+                <li><strong>Procedimientos. </strong>Pasos estandarizados y detallados que imponen la forma en que deben ejecutarse tareas específicas.</li>
+                <li><strong>Proceso Conjunto de Inteligencia del Ambiente Operacional.</strong> El proceso analítico organizaciones conjuntas de inteligencia para producir estimaciones de inteligencia y otros productos de inteligencia en apoyo de la toma de decisiones del comandante de la fuerza conjunta.</li>
+                <li><strong>Proceso de Adquisición y Priorización de Blancos. </strong>Conjunto de actividades interrelacionadas para seleccionar, analizar y priorizar blancos, articulándolos con la respuesta de acción o ataque más apropiada, teniendo en cuenta los requerimientos y capacidades operacionales.</li>
+                <li><strong>Proceso de Planeamiento de Operaciones Conjuntas.</strong> Metodología de planeamiento consistente en un conjunto de pasos lógicos, ordenado y analítico, para enmarcar un problema; analizar una misión; desarrollar, analizar y comparar cursos de acción alternativos; selecciona el mejor curso de acción; y producir un plan u orden.</li>
+                <li><strong>Proceso de Planificación Conjunto.</strong> Un proceso analítico ordenado que consiste en un conjunto lógico de pasos para analizar una misión, seleccionar el mejor curso de acción y producir una campaña o plan u orden de operación.</li>
+                <li><strong>Protección de Embarcaciones. </strong>Uso de una fuerza proporcional, cuando sea necesario para la protección de buques de bandera nacional y ciudadanos nacionales, ya sea que se embarquen en buques colombianos o extranjeros, y sus bienes, contra la violencia ilícita.</li>
+                <li><strong>Protección de la Fuerza.</strong> Medidas preventivas adoptadas para mitigar las acciones hostiles en contra del personal al servicio de la Fuerza (incluyendo miembros de la familia), los medios físicos de la nación (infraestructura estratégica, instalaciones, etc.) y los asociados de la acción unificada.</li>
+                <li><strong>Protección.</strong> Preservación de la efectividad y supervivencia del personal, el equipo, las instalaciones, la información y la infraestructura (militar y no militar) relacionados con la misión y desplegados dentro o fuera de los límites del área operacional.</li>
+                <li><strong>Proyección de Fuerza.</strong> Capacidad de proyectar los instrumentos del poder nacional desde sus unidades en respuesta a las necesidades de las operaciones militares. Incluye los procesos de movilización, despliegue, empleo, sostenimiento y redespliegue de las fuerzas.</li>
+                <li><strong>Punto Decisivo. </strong>Es un lugar geográfico, un evento clave específico, un factor crítico o una función que, cuando se actúa sobre ella, permite a un comandante obtener una marcada ventaja sobre un enemigo o contribuye materialmente a lograr el éxito rango de las operaciones militares. Concepto descriptivo de relación que conecta el nivel operacional de la guerra con el estratégico y el táctico (considerando que las operaciones y las campañas también son escalables), mediante su delimitación en tres categorías que facilitan el empleo del poder militar en formas que varían en propósito, escala, riesgo e intensidad de combate y que en el continuum del conflicto van de la paz a la guerra.</li>
+                <li><strong>Rango de las Operaciones Militares.</strong> Concepto descriptivo de relación que conecta el nivel operacional de la guerra con el estratégico y el táctico (considerando que las operaciones y las campañas también son escalables), mediante su delimitación en tres categorías que facilitan el empleo del poder militar en formas que varían en propósito, escala, riesgo e intensidad de combate y que en el continuum del conflicto van de la paz a la guerra.</li>
+                <li><strong>Recomendación de Reataque.</strong> Apreciación derivada de los resultados de la evaluación de daños en combate y la evaluación de la efectividad de las municiones, que proporciona al comandante un asesoramiento sistemático sobre el reenganche de un objetivo.</li>
+                <li><strong>Reconocimiento. </strong>Misión para obtener, información sobre las actividades y recursos de un enemigo o adversario, o para obtener datos relativos a las características meteorológicas, hidrográficas o geográficas de un área en particular mediante observación visual u otros métodos de detección.</li>
+                <li><strong>Recursos.</strong> Fuerzas, material y otros bienes o capacidades asignados o entregados al comandante de un comando.</li>
+                <li><strong>Reglas de Enfrentamiento.</strong> Directrices emitidas por la autoridad militar competente que delimitan las circunstancias y restricciones bajo las cuales las unidades inician y/o continúan con el uso de la fuerza contra fuerzas encontradas.</li>
+                <li><strong>Reglas para el Uso de la Fuerza. </strong>Directivas emitidas para guiar a las unidades en el uso de la fuerza durante varias operaciones. requerimiento de información crítica del comandante. Requerimiento de información identificado por el comandante como crítico para facilitar una toma de decisiones oportuna.</li>
+                <li><strong>Relaciones de Mando. </strong>Las relaciones de mando son las responsabilidades interrelacionadas entre los comandantes, así como la autoridad operacional ejercida por los comandantes en la cadena de mando; definidos como mando, control operacional, control táctico o apoyo.</li>
+                <li><strong>Requerimiento de Información Crítica del Comandante.</strong> Requerimiento de información identificado por el comandante como crítico para facilitar una toma de decisiones oportuna.</li>
+                <li><strong>Requerimiento de Información de las Propias Tropas.</strong> Información que el comandante y el estado mayor/plana mayor necesitan para entender el estado de las propias tropas y de las capacidades de apoyo.</li>
+                <li><strong>Requerimiento de Información.</strong> Cualquier elemento de información que el comandante y el estado mayor/plana mayor necesitan para conducir las operaciones con éxito.</li>
+                <li><strong>Requerimiento Prioritario de Inteligencia.</strong> Requerimiento de inteligencia, establecido como prioridad para el apoyo de la inteligencia, que el comandante y el estado mayor/plana mayor necesitan para entender al enemigo u otros aspectos importantes del ambiente operacional.</li>
+                <li><strong>Restricción. </strong>En el contexto de la planificación, un requisito colocado al mando por un que dicta una acción, restringiendo así la libertad de acción.</li>
+                <li><strong>Riesgo.</strong> Probabilidad de pérdida o daño relacionado con uno o varios peligros.</li>
+                <li><strong>Ritmo de Batalla.</strong> Ciclo diario planeado de comando, estado mayor y actividades de la unidad con la intención de sincronizar las operaciones actuales y futuras.</li>
+                <li><strong>Seguridad de las Operaciones.</strong> Capacidad que identifica y controla información crítica, indicadores de acción de fuerza amigas relacionadas con operaciones militares, e incorpora contramedidas para reducir el riesgo de que un adversario explote las vulnerabilidades.</li>
+                <li><strong>Seguridad Física.</strong> 1. Parte de la seguridad se refiere a medidas físicas diseñadas para proteger al personal; evitar el acceso no autorizado a equipos, instalaciones, material y documentos, y para protegerlos contra espionaje, sabotaje, daño y hurto. 2. En seguridad de las comunicaciones, es el componente que resulta de todas las medidas físicas necesarias para proteger el equipo, el material y los documentos clasificados de su acceso o su observación por parte de personas no autorizadas.</li>
+                <li><strong>Seguridad Pública.</strong> Actividades de prevención, detección y neutralización frente a amenazas de crimen organizado y delitos nacionales, transnacionales e internacionales, que atenten contra las condiciones de bienestar de la población civil, la prosperidad de las comunidades, la infraestructura y servicios asociados del estado incluyendo los recursos naturales.</li>
+                <li><strong>Seguridad. </strong>1. Medidas adoptadas por una unidad militar, actividad o instalación para protegerse contra todos los actos diseñados para, o que puedan, perjudicar su eficacia. 2. A condición que resulta del establecimiento y mantenimiento de medidas de protección que aseguran un estado de inviolabilidad por actos o influencias hostiles. 3. Con respecto a la materia clasificada, la condición que impide que las personas no autorizadas información oficial que se salvaguarda en interés de la seguridad. </li>
+                <li><strong>Sincronización de Comunicaciones del Comandante.</strong> Proceso para coordinar y sincronizar narrativas, temas, mensajes, imágenes, operaciones y acciones para garantizar su integridad y consistencia hasta el nivel táctico más bajo en todas las actividades de comunicación relevantes.</li>
+                <li><strong>Sincronizador global. </strong>Comandante de comando conjunto responsable de la alineación del planeamiento específico y actividades relacionadas de otros comandos conjuntos, Fuerzas, dependencias del Ministerio de Defensa Nacional y cuando corresponda, otras dependencias del Gobierno Nacional, dentro un marco</li>
+                <li><strong>Sistema Conjunto de Planeamiento Estratégico.</strong> Uno de los principales medios por los cuales el comandante general de las Fuerzas Militares, asistido por los demás miembros del Estado Mayor Conjunto y los comandantes de comando conjunto, cumple las responsabilidades legales de asistir al Presidente y al ministro de Defensa en la provisión de dirección estratégica a las FF. MM.</li>
+                <li><strong>Sistema de Armas.</strong> Combinación de una o más armas con todo el equipo relacionado, materiales, servicios, personal y medios de entrega y despliegue, si corresponde, necesarios para su autosuficiencia.</li>
+                <li><strong>Sistema de Mando y Control.</strong> Las instalaciones, equipos, comunicaciones, procedimientos y personal esenciales para que un comandante planee, controle las operaciones de las fuerzas asignadas y agregadas en cumplimiento de las misiones impuestas.</li>
+                <li><strong>Sistema de Planeamiento y Ejecución Adaptativo.</strong> Sistema políticas, procesos, procedimientos y estructuras de informes conjuntas, respaldado por las comunicaciones y la tecnología de la información, que utiliza la comunidad de planeamiento y ejecución conjunta para supervisar, planear y ejecutar la movilización y la implementación, empleo, sostenimiento, redespliegue y actividades de desmovilización asociadas con operaciones conjuntas.</li>
+                <li><strong>Sistema.</strong> Grupo relacionado funcional, física y/o conductualmente que interactúa regularmente o elementos interdependientes que juntos forman un todo unificado.</li>
+                <li><strong>Sostenimiento. </strong>Provisión de servicios logísticos, de sanidad en campaña y de personal necesarios para mantener y prolongar las operaciones hasta el cumplimiento de la misión.</li>
+                <li><strong>Subversión.</strong> Acciones diseñadas para socavar el ejército, la economía, la psicológica o la fuerza política o moral de una autoridad de gobierno</li>
+                <li><strong>Superioridad Aérea.</strong> Grado de dominio en la batalla aérea por una fuerza que permite la conducción de sus operaciones en un momento y lugar determinados sin la interferencia prohibitiva de amenazas de aire y misiles.</li>
+                <li><strong>Superioridad Multidominio.</strong> Efecto acumulativo producto de los dominios terrestre, marítimo, aéreo, espacial, el espectro electromagnético y el ambiente de la información, que incluye el ciberespacio, que permite la ejecución de operaciones conjuntas sin oposición efectiva o interferencia prohibitiva.</li>
+                <li><strong>Supervisión de Entrenamiento y Alistamiento.</strong> Autoridad que los comandantes combatientes pueden ejercer sobre las fuerzas asignadas del componente de reserva cuando no están en servicio activo o cuando están en servicio activo para entrenamiento.</li>
+                <li><strong>Supremacía Aérea.</strong> Grado de control del aire en el que la fuerza contraria es incapaz de interferencia efectiva dentro del OA usando amenazas de aire y misiles.</li>
+                <li><strong>Supuesto.</strong> Considerando o hipótesis real o verdadera, sin tener evidencias que así lo sea.</li>
+                <li><strong>Táctica. </strong>Empleo y disposición ordenada de fuerzas en relación con otras.</li>
+                <li><strong>Tarea. </strong>Acción o actividad claramente definida y específicamente asignada a un individuo u organización que debe ser ejecutada como lo impone la autoridad apropiada.</li>
+                <li><strong>Tareas Deducidas.</strong> Son tareas adicionales que el comandante debe hacer, generalmente para conducir las tareas impuestas y esenciales, apoyar otro comando o conducir actividades relevantes para la operación o para cumplir el objetivo.</li>
+                <li><strong>Tareas Esenciales. </strong>Son aquellas que el comandante debe ejecutar con éxito para alcanzar el estado final deseado definido en la directiva de planeamiento.</li>
+                <li><strong>Tareas Impuestas. </strong>Son aquellas que un comandante asigna a un comandante subordinado en una directiva de planeamiento; son las que el comandante quiere que el comandante subordinado cumpla, generalmente porque son importantes para el cumplimiento de la misión y para los del comando superior.</li>
+                <li><strong>Teatro de la Guerra. </strong>Área de aire, tierra y agua definida desde el escalón estratégico por el Presidente de la República, el Comandante General de las Fuerzas Militares o el comandante de un comando conjunto que es, o puede llegar a ser, directamente comprometida en la conducción de operaciones mayores y campañas.</li>
+                <li><strong>Teatro de Operaciones. </strong>Área operacional definida por el comandante de un comando conjunto para la conducción o apoyo de operaciones militares específicas.</li>
+                <li><strong>Teatro.</strong> Área geográfica para la cual se ha asignado la responsabilidad al comandante de un comando conjunto.</li>
+                <li><strong>Técnicas.</strong> Formas o métodos no obligatorios utilizados para ejecutar misiones, funciones o tareas.</li>
+                <li><strong>Transformación. </strong>Proceso continuo y proactivo de desarrollar e integrar conceptos, doctrinas y capacidades innovadoras para mejorar la eficacia y la interoperabilidad de las fuerzas militares.</li>
+                <li><strong>Trazabilidad.</strong> Obligación impuesta por leyes o regulaciones para mantener el registro exacto de personal, propiedades, documentos o fondos.</li>
+                <li><strong>Unción de Conducción de la Guerra Fuegos.</strong> Conjunto de tareas y sistemas relacionados entre sí, que proveen el uso colectivo y coordinado de los fuegos conjuntos, mediante el proceso de selección y priorización de blancos.</li>
+                <li><strong>Unidad Administrativa Especial Migración Colombia.</strong> Organismo civil de seguridad, denominada Migración Colombia, con personería jurídica, autonomía administrativa, financiera y patrimonio independiente, con jurisdicción en todo el territorio nacional, adscrita al Ministerio de Relaciones Exteriores.</li>
+                <li><strong>Unidad Conjunta.</strong> Unidad compuesta por elementos significativos, asignados o agregados, de dos o más Fuerzas que operan bajo un solo comandante.</li>
+                <li><strong>Unidad de Esfuerzo.</strong> Coordinación a través de la cooperación hacia objetivos comunes, incluso si los participantes no son necesariamente parte del mismo comando u organización, producto de una acción unificada exitosa.</li>
+                <li><strong>Unidad de Mando.</strong> Empleo de todas las fuerzas bajo un solo comandante responsable, que tiene la autoridad requerida para dirigir y emplear esas fuerzas en la búsqueda de un propósito comun.</li>
+                <li><strong>Unidad de Mando. </strong>Empleo de todas las fuerzas bajo un solo comandante responsable, que tiene la autoridad requerida para dirigir y emplear esas fuerzas en la búsqueda de un propósito común unidades.</li>
+                <li><strong>Vigilancia.</strong> La observación sistemática de áreas aeroespaciales, ciberespaciales, de superficie o de subsuperficie; lugares; personas; o cosas, por medios visuales, auditivos, electrónicos, fotográficos o de otro tipo.</li>
+                <li><strong>Zona de Exclusión.</strong> Zona establecida por un organismo sancionador para prohibir actividades específicas en un área geográfica definida con el fin de persuadir a las naciones o grupos a modificar su comportamiento para satisfacer los deseos del organismo sancionador o enfrentar la imposición continua de sanciones o incluso el uso o la amenaza de la fuerza.</li>
+                <li><strong>Zona de Interés.</strong> Esa área que preocupa al comandante, incluida la zona de influencia, zonas adyacentes a la mismo, y extendiéndose a territorio enemigo.</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="results_page" style="display:none;">
+        <h2>Resumen de su avance en la lectura del documento</h2>
+        <h3>Páginas visitadas</h3>
+        <p>En verde, aquellas páginas que ya ha visitado.</p>
+        <div id="results_page_visited" class="container"></div>
+        <br class="clear" />
+        <h3>Actividades de aprendizaje</h3>
+        <div id="results_page_activities"></div>
+    </div>
+
+    <div id="printent_content" style="display:none;">
+        <div class="content"></div>
+        <div class="button_container">
+            <button class="general button" onclick="window.print();">Imprimir</button>
+            <button id="printent_back" class="general button" >Volver</button>
+        </div>
+    </div>
+
+</body>
+</html>
