@@ -162,24 +162,23 @@ img {
 /********************************************************************************/
 /* SLIDE 3
 /********************************************************************************/
-#slide3 .col-2.interactividad-over {
+#slide3 .interactividad-over {
     position: relative;
-    height: 40vh;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 #slide3 .mouse-over-one {
-    position: absolute;
     bottom: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
 }
 
 #slide3 .mouse-over-one .button {
-    width: 40px;
-    height: 40px;
-    font-size: 30px;
-    line-height: 40px;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
     text-align: center;
     background-color: #000;
     padding: 10px;
